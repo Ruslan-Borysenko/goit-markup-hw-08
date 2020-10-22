@@ -1,0 +1,8 @@
+@mixin transition($type) {
+  transition: $type $duration $timming-function;
+}
+
+@mixin transitions($type, $second-type) {
+  transition: $type $duration $timming-function,
+    $second-type $duration $timming-function;
+}
