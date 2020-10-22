@@ -1,0 +1,22 @@
+$colors: (
+  "primary": #757575,
+  "secondary": #212121,
+  "accent": #2196f3,
+  "footer-background": #2f303a,
+  "btn-text": #ffffff,
+  "hero-title": #ffffff,
+  "header-logo": #000000,
+  "footer-logo": #ffffff,
+  "social-networks-hover-icon": #ffffff,
+  "social-networks-icon": #afb1b8,
+  "portfolio-content-box": #ffffff,
+  "portfolio-pop-up-content-box": rgba(33, 150, 243, 0.9),
+  "portfolio-pop-up-text": #ffffff,
+  "check-box": #212121,
+  "container-outline": teal,
+  "container-bck": bisque,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
