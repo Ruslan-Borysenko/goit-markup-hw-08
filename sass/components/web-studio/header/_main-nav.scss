@@ -1,0 +1,60 @@
+// main-nav
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// main-menu__button
+.main-menu__button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: getColor("accent");
+  }
+}
+
+.main-menu__icon-close {
+  display: none;
+
+  .main-menu__button.is-open & {
+    display: block;
+  }
+}
+
+.main-menu__icon-menu {
+  display: block;
+
+  .main-menu__button.is-open & {
+    display: none;
+  }
+}
+
+// main-menu
+.main-menu {
+  @media screen and(max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: #fff;
+    transform: scale(0.8);
+    @include transition(transform);
+
+    &.is-open {
+      display: block;
+      transform: scale(1);
+    }
+  }
+}
