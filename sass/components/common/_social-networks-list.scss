@@ -23,6 +23,15 @@
   }
 }
 
+// Стилі для футера
+.footer-page .social-networks-list__link {
+  background-color: getColor("social-networks-icon");
+}
+
+.footer-page .social-networks-list__icon {
+  fill: #ffffff;
+}
+
 .social-networks-list__icon {
   display: block;
 
