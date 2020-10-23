@@ -74,6 +74,8 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  outline: teal;
+  background-color: bisque;
   /* Цей медіа запит видаляє горизонтальну полосу прокрутки,
 та дає змогу контейнеру тянутись до 480px */
 }
@@ -81,6 +83,12 @@ img {
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
   }
 }
 
@@ -115,12 +123,14 @@ img {
   display: block;
 }
 
-.main-menu__icon-menu {
-  display: block;
-}
-
 .main-menu__button.is-open .main-menu__icon-menu {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .main-menu__button {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
