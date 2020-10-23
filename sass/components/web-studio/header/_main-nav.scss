@@ -29,10 +29,14 @@
   }
 }
 
-.main-menu__icon-menu {
-  display: block;
+.main-menu__button.is-open {
+  .main-menu__icon-menu {
+    display: none;
+  }
+}
 
-  .main-menu__button.is-open & {
+@media screen and(min-width: $tablet) {
+  .main-menu__button {
     display: none;
   }
 }
