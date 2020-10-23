@@ -1,0 +1,47 @@
+.nav-site {
+  @extend %list;
+
+  @media screen and(max-width: 767px) {
+    margin-bottom: 60px;
+  }
+}
+
+.nav-site__item {
+  text-align: center;
+
+  @media screen and(max-width: 767px) {
+    margin-bottom: 40px;
+  }
+}
+
+.nav-site__link {
+  @extend %link;
+  display: inline-block;
+  position: relative;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: getColor("secondary");
+
+  &--current {
+    color: getColor("accent");
+  }
+
+  &--current::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+
+    background-color: getColor("accent");
+    border-radius: 2px;
+
+    /* Нижній відступ марджином тільки на mobile */
+    @media screen and(max-width: 767px) {
+      margin-top: 8px;
+    }
+  }
+}
