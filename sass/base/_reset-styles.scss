@@ -1,3 +1,7 @@
+body.modal-open {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -11,4 +15,17 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section-title {
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.78;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: getColor("secondary");
 }
