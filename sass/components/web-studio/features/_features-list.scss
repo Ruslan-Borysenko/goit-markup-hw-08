@@ -5,9 +5,40 @@
 }
 
 .features-list__item {
-  &:not(:last-child) {
+  margin-bottom: 30px;
+
+  &:last-child {
     @media screen and(max-width: 767px) {
-      margin-bottom: 30px;
+      margin-bottom: 0px;
+    }
+  }
+
+  & {
+    @media screen and(min-width: $tablet) {
+      margin-right: 30px;
+      flex-basis: calc((100% - 1 * 30px) / 2);
+    }
+  }
+
+  & {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+      &:nth-child(2n) {
+        margin-right: 0px;
+      }
+
+      &:nth-last-child(-n + 2) {
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  & {
+    @media screen and(min-width: $desktop) {
+      flex-basis: calc((100% - 3 * 30px) / 4);
+
+      &:nth-last-child(-n + 1) {
+        margin-right: 0;
+      }
     }
   }
 }
