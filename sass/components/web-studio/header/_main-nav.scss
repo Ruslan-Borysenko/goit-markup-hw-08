@@ -1,8 +1,16 @@
 // main-nav
 .main-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @media screen and(max-width: 767px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media screen and(min-width: $tablet) {
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+  }
 }
 
 // main-menu__button
@@ -53,12 +61,23 @@
     padding-bottom: 60px;
 
     background-color: #fff;
-    transform: scale(0.8);
-    @include transition(transform);
+    z-index: 2;
+    opacity: 0;
+    transform: scaleY(0);
+
+    @include transitions(transform, opacity);
 
     &.is-open {
       display: block;
-      transform: scale(1);
+      transform: scaleY(1);
+      opacity: 1;
+    }
+  }
+
+  & {
+    @media screen and(min-width: $tablet) {
+      display: flex;
+      align-items: center;
     }
   }
 }
