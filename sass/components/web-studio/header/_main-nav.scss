@@ -4,6 +4,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   @media screen and(min-width: $tablet) {
@@ -63,9 +65,10 @@
     background-color: #fff;
     z-index: 2;
     opacity: 0;
+    transform-origin: top;
     transform: scaleY(0);
 
-    @include transitions(transform, opacity);
+    @include transitions(opacity, transform);
 
     &.is-open {
       display: block;
