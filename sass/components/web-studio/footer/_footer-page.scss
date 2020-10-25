@@ -2,13 +2,9 @@
 
 // footer-page
 .footer-page {
-  background-color: getColor("footer-background");
-}
-
-// footer-container
-.footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: getColor("footer-background");
 }
 
 .footer-flex-wrapper {

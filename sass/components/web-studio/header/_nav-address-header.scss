@@ -45,7 +45,7 @@
     color: getColor("accent");
   }
 
-  &:hover,
+  &:hover .nav-address-header__icon,
   &:focus .nav-address-header__icon {
     fill: getColor("accent");
   }

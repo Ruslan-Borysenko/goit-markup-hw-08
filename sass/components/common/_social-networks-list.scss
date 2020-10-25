@@ -31,6 +31,17 @@
 
 .footer-page .social-networks-list__link {
   background-color: rgba(255, 255, 255, 0.1);
+
+  @media screen and(min-width: $desktop) {
+    @include transition(background-color);
+  }
+}
+
+.footer-page .social-networks-list__link:hover,
+.footer-page .social-networks-list__link:focus {
+  @media screen and(min-width: $desktop) {
+    background-color: getColor("accent");
+  }
 }
 
 .footer-page .social-networks-list__icon {

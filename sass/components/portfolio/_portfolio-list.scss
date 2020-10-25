@@ -1,36 +1,30 @@
 .portfolio-list {
   @extend %list;
-
-  @media screen and(min-width: $tablet) {
-    display: flex;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .portfolio-list__item {
-  &:not(:nth-last-child(-n + 1)) {
-    @media screen and(max-width: 767px) {
-      margin-bottom: 30px;
+  margin-bottom: 30px;
+
+  &:nth-last-child(-n + 1) {
+    @media screen and(max-width: 1199px) {
+      margin-bottom: 0px;
     }
   }
 
-  &:not(:nth-last-child(-n + 3)) {
+  @media screen and(min-width: $tablet) {
+    margin-right: 30px;
+  }
+
+  &:nth-last-child(-n + 3) {
     @media screen and(min-width: $desktop) {
-      margin-bottom: 30px;
+      margin-bottom: 0px;
     }
   }
 
-  & {
-    @media screen and(min-width: $tablet) {
-      margin-right: 30px;
-      margin-bottom: 30px;
-    }
-  }
-
-  & {
-    @media screen and (min-width: $tablet) and (max-width: 1199px) {
-      flex-basis: calc((100% - 1 * 30px) / 2);
-    }
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    flex-basis: calc((100% - 1 * 30px) / 2);
   }
 
   &:nth-child(2n) {
@@ -39,13 +33,11 @@
     }
   }
 
-  & {
-    @media screen and (min-width: $desktop) {
-      flex-basis: calc((100% - 2 * 30) / 3);
+  @media screen and (min-width: $desktop) {
+    flex-basis: calc((100% - 2 * 30px) / 3);
 
-      &:nth-child(3n) {
-        margin-right: 0px;
-      }
+    &:nth-child(3n) {
+      margin-right: 0px;
     }
   }
 }
@@ -69,7 +61,7 @@
   background-color: getColor("portfolio-pop-up-content-box");
   @include transition(transform);
 
-  .portfolio-list__img-wrapper:hover & {
+  .portfolio-list__link:hover & {
     transform: translateY(0);
   }
 }
@@ -80,8 +72,11 @@
   border: 1px solid #eeeeee;
   border-top: none;
   box-sizing: border-box;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  .portfolio-list__link:hover & {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .portfolio-list__pop-up-text {

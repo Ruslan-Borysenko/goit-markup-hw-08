@@ -1,0 +1,15 @@
+/* Features */
+.features {
+  padding-top: 60px;
+  padding-bottom: 60;
+  background-color: getColor("features-section");
+
+  @media screen and(min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  & .section-title {
+    @extend %visually-hidden;
+  }
+}

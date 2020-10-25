@@ -1,6 +1,12 @@
-.clients-container {
+.clients {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: getColor("clients-section");
+
+  @media screen and(min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 // clients-list
@@ -51,10 +57,8 @@
     }
   }
 
-  & {
-    @media screen and (min-width: $desktop) {
-      margin-bottom: 0px;
-    }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0px;
 
     &:nth-last-child(-n + 1) {
       margin-right: 0px;
