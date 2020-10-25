@@ -204,8 +204,8 @@
         </div>
       </section>
       <!-- Features -->
-      <section class="section">
-        <div class="container features-container">
+      <section class="section features">
+        <div class="container">
           <h2 class="section-title features-title">Преимущества</h2>
           <ul class="features-list">
             <li class="features-list__item">
@@ -263,18 +263,20 @@
         </div>
       </section>
       <!-- Examples -->
-      <section class="section">
-        <div class="container examples-container">
-          <h2 class="section-title examples">Чем мы занимаемся</h2>
+      <section class="section examples">
+        <div class="container">
+          <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="examples-list">
             <li class="examples-list__item">
               <div class="examples-list__img-wrapper">
-                <img
-                  src="./img/work1.jpg"
-                  alt="мужчина работает за компьютером"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                  srcset="./img/work-1-img-370@1x.webp 1x, ./img/work-1-img-370@2x.webp 2x, ./img/work-1-img-370@3x.webp 3x"
+                  type="image/webp"/>
+                  <img loading="lazy" class="image"
+                    srcset="./img/work-1-img-370@1x.jpg 1x, ./img/work-1-img-370@2x.jpg 2x, ./img/work-1-img-370@3x.jpg 3x"
+                    src="./img/work-1-img-370@1x.jpg" alt="Программируем" width="370" />
+                </picture>
                 <div class="examples-list__content-box">
                   <p class="examples-list__description">
                     Десктопные приложения
@@ -285,12 +287,14 @@
 
             <li class="examples-list__item">
               <div class="examples-list__img-wrapper">
-                <img
-                  src="./img/work2.jpg"
-                  alt="девушка работает за ноутбуком и держит в руке телефон"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="./img/work-2-img-370@1x.webp 1x, ./img/work-2-img-370@2x.webp 2x, ./img/work-2-img-370@3x.webp 3x"
+                    type="image/webp" />
+                    <img loading="lazy" class="image"
+                      srcset="./img/work-2-img-370@1x.jpg 1x, ./img/work-2-img-370@2x.jpg 2x, ./img/work-2-img-370@3x.jpg 3x"
+                      src="./img/work-2-img-370@1x.jpg" alt="Верстаем" width="370" />
+                </picture>
                 <div class="examples-list__content-box">
                   <p class="examples-list__description">Мобильные приложения</p>
                 </div>
@@ -299,12 +303,14 @@
 
             <li class="examples-list__item">
               <div class="examples-list__img-wrapper">
-                <img
-                  src="./img/work3.jpg"
-                  alt="девушка работает на планшете"
-                  width="370"
-                  height="294"
-                />
+               <picture>
+                <source
+                  srcset="./img/work-3-img-370@1x.webp 1x, ./img/work-3-img-370@2x.webp 2x, ./img/work-3-img-370@3x.webp 3x"
+                  type="image/webp" />
+                  <img loading="lazy" class="image"
+                    srcset="./img/work-3-img-370@1x.jpg 1x, ./img/work-3-img-370@2x.jpg 2x, ./img/work-3-img-370@3x.jpg 3x"
+                    src="./img/work-3-img-370@1x.jpg" alt="Рисуем" width="370" />
+               </picture>
                 <div class="examples-list__content-box">
                   <p class="examples-list__description">Дизайнерские решения</p>
                 </div>
@@ -314,18 +320,28 @@
         </div>
       </section>
       <!-- Our team -->
-      <section class="section">
-        <div class="container our-team-container">
+      <section class="section our-team">
+        <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-cards-list">
+
             <li class="team-cards-list__item">
-              <img
-                class="team-cards-list__image"
-                src="./img/employee1.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source srcset="./img/comand-1-450img@1x.webp 450w,
+                                          ./img/comand-1-450img@2x.webp 900w" media="(max-width: 767px)" type="image/webp" />
+                <source srcset="./img/comand-1-354img@1x.webp 354w,
+                                          ./img/comand-1-354img@2x.webp 708w" media="(min-width: 768px) and (max-width: 1199px)"
+                  type="image/webp" />
+                <source srcset="./img/comand-1-270img@1x.webp 270w,
+                                          ./img/comand-1-270img@2x.webp 540w" media="(min-width: 1200px)" type="image/webp" />
+                <source srcset="./img/comand-1-450img@1x.jpg 450w,
+                                          ./img/comand-1-450img@2x.jpg 900w" media="(max-width: 767px)" />
+                <source srcset="./img/comand-1-354img@1x.jpg 354w,
+                                          ./img/comand-1-354img@2x.jpg 708w" media="(min-width: 768px) and (max-width: 1199px)" />
+                <source srcset="./img/comand-1-270img@1x.jpg 270w,
+                                          ./img/comand-1-270img@2x.jpg 540w" media="(min-width: 1200px)" />
+                <img loading="lazy" class="image" src="./img/comand-1-270img@1x.jpg" alt="Игорь Демьяненко" />
+              </picture>
               <h3 class="team-cards-list__name">Игорь Демьяненко</h3>
               <p class="team-cards-list__occupation">Product Designer</p>
               <ul class="social-networks-list">
@@ -377,13 +393,21 @@
             </li>
 
             <li class="team-cards-list__item">
-              <img
-                class="team-cards-list__image"
-                src="./img/employee2.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source srcset="./img/comand-2-450img@1x.webp 450w,
+                                ./img/comand-2-450img@2x.webp 900w" media="(max-width: 767px)" type="image/webp"/>
+                <source srcset="./img/comand-2-354img@1x.webp 354w,
+                                ./img/comand-2-354img@2x.webp 708w" media="(min-width: 768px) and (max-width: 1199px)" type="image/webp"/>
+                <source srcset="./img/comand-2-270img@1x.webp 270w,
+                                ./img/comand-2-270img@2x.webp 540w" media="(min-width: 1200px)" type="image/webp"/>
+                <source srcset="./img/comand-2-450img@1x.jpg 450w,
+                                ./img/comand-2-450img@2x.jpg 900w" media="(max-width: 767px)"/>
+                <source srcset="./img/comand-2-354img@1x.jpg 354w,
+                                ./img/comand-2-354img@2x.jpg 708w" media="(min-width: 768px) and (max-width: 1199px)">
+                <source srcset="./img/comand-2-270img@1x.jpg 270w,
+                                ./img/comand-2-270img@2x.jpg 540w" media="(min-width: 1200px)">                
+                <img loading="lazy" class="image" src="./img/comand-2-270img@1x.jpg" alt="Ольга Репина">
+              </picture>
               <h3 class="team-cards-list__name">Ольга Репина</h3>
               <p class="team-cards-list__occupation">Frontend Developer</p>
               <ul class="social-networks-list">
@@ -435,13 +459,25 @@
             </li>
 
             <li class="team-cards-list__item">
-              <img
-                class="team-cards-list__image"
-                src="./img/employee3.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source srcset="./img/comand-3-450img@1x.webp 450w,
+                                                        ./img/comand-3-450img@2x.webp 900w" media="(max-width: 767px)"
+                  type="image/webp" />
+                <source srcset="./img/comand-3-354img@1x.webp 354w,
+                                                        ./img/comand-3-354img@2x.webp 708w"
+                  media="(min-width: 768px) and (max-width: 1199px)" type="image/webp" />
+                <source srcset="./img/comand-3-270img@1x.webp 270w,
+                                                        ./img/comand-3-270img@2x.webp 540w" media="(min-width: 1200px)"
+                  type="image/webp" />
+                <source srcset="./img/comand-3-450img@1x.jpg 450w,
+                                                        ./img/comand-3-450img@2x.jpg 900w" media="(max-width: 767px)" />
+                <source srcset="./img/comand-3-354img@1x.jpg 354w,
+                                                        ./img/comand-3-354img@2x.jpg 708w"
+                  media="(min-width: 768px) and (max-width: 1199px)" />
+                <source srcset="./img/comand-3-270img@1x.jpg 270w,
+                                                        ./img/comand-3-270img@2x.jpg 540w" media="(min-width: 1200px)" />
+                <img loading="lazy" class="image" src="./img/comand-3-270img@1x.jpg" alt="Николай Тарасов" />
+              </picture>
               <h3 class="team-cards-list__name">Николай Тарасов</h3>
               <p class="team-cards-list__occupation">Marketing</p>
               <ul class="social-networks-list">
@@ -493,13 +529,27 @@
             </li>
 
             <li class="team-cards-list__item">
-              <img
-                class="team-cards-list__image"
-                src="./img/employee4.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source srcset="./img/comand-4-450img@1x.webp 450w,
+                                                                      ./img/comand-4-450img@2x.webp 900w" media="(max-width: 767px)"
+                  type="image/webp" />
+                <source srcset="./img/comand-4-354img@1x.webp 354w,
+                                                                      ./img/comand-4-354img@2x.webp 708w"
+                  media="(min-width: 768px) and (max-width: 1199px)" type="image/webp" />
+                <source srcset="./img/comand-4-270img@1x.webp 270w,
+                                                                      ./img/comand-4-270img@2x.webp 540w" media="(min-width: 1200px)"
+                  type="image/webp" />
+                <source srcset="./img/comand-4-450img@1x.jpg 450w,
+                                                                      ./img/comand-4-450img@2x.jpg 900w"
+                  media="(max-width: 767px)" />
+                <source srcset="./img/comand-4-354img@1x.jpg 354w,
+                                                                      ./img/comand-4-354img@2x.jpg 708w"
+                  media="(min-width: 768px) and (max-width: 1199px)" />
+                <source srcset="./img/comand-4-270img@1x.jpg 270w,
+                                                                      ./img/comand-4-270img@2x.jpg 540w"
+                  media="(min-width: 1200px)" />
+                <img loading="lazy" class="image" src="./img/comand-4-270img@1x.jpg" alt="Михаил Ермаков" />
+              </picture>
               <h3 class="team-cards-list__name">Михаил Ермаков</h3>
               <p class="team-cards-list__occupation">UI Designer</p>
               <ul class="social-networks-list">
@@ -553,8 +603,8 @@
         </div>
       </section>
       <!-- Clients -->
-      <section class="section">
-        <div class="container clients-container">
+      <section class="section clients">
+        <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="clients-list">
             <li class="clients-list__item">
@@ -605,72 +655,72 @@
     </main>
     <!-- Footer -->
     <footer class="footer-page">
-      <div class="container footer-container">
+      <div class="container">
       
-    <div class="footer-flex-wrapper">
-      <div class="test">
-        <div class="footer-logo-and-address-wrapper">
-          <a class="logo footer-page__logo" href="./index.html">Web<span class="logo__item-secondary">Studio</span></a>
-      
-          <address class="nav-address-footer">
-            <span class="nav-address-footer__text">г. Киев, пр-т Леси Украинки, 26</span>
-            <br />
-            <a class="nav-address-footer__link" href="mailto:info@example.com">info@example.com</a>
-            <br />
-            <a class="nav-address-footer__link" href="tel:+380991111111">+38 099 111 11 11</a>
-          </address>
+      <div class="footer-flex-wrapper">
+        <div class="test">
+          <div class="footer-logo-and-address-wrapper">
+            <a class="logo footer-page__logo" href="./index.html">Web<span class="logo__item-secondary">Studio</span></a>
+        
+            <address class="nav-address-footer">
+              <span class="nav-address-footer__text">г. Киев, пр-т Леси Украинки, 26</span>
+              <br />
+              <a class="nav-address-footer__link" href="mailto:info@example.com">info@example.com</a>
+              <br />
+              <a class="nav-address-footer__link" href="tel:+380991111111">+38 099 111 11 11</a>
+            </address>
+          </div>
+        
+          <div class="call-text-and-social-network">
+            <b class="call-text">Присоединяйтесь</b>
+            <ul class="social-networks-list">
+              <li class="social-networks-list__item">
+                <a class="social-networks-list__link" href="">
+                  <svg class="social-networks-list__icon" width="20" height="20">
+                    <use href="./img/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-networks-list__item">
+                <a class="social-networks-list__link" href="">
+                  <svg class="social-networks-list__icon" width="20" height="20">
+                    <use href="./img/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-networks-list__item">
+                <a class="social-networks-list__link" href="">
+                  <svg class="social-networks-list__icon" width="20" height="20">
+                    <use href="./img/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-networks-list__item">
+                <a class="social-networks-list__link" href="">
+                  <svg class="social-networks-list__icon" width="20" height="20">
+                    <use href="./img/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      
-        <div class="call-text-and-social-network">
-          <b class="call-text">Присоединяйтесь</b>
-          <ul class="social-networks-list">
-            <li class="social-networks-list__item">
-              <a class="social-networks-list__link" href="">
-                <svg class="social-networks-list__icon" width="20" height="20">
-                  <use href="./img/sprite.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-networks-list__item">
-              <a class="social-networks-list__link" href="">
-                <svg class="social-networks-list__icon" width="20" height="20">
-                  <use href="./img/sprite.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-networks-list__item">
-              <a class="social-networks-list__link" href="">
-                <svg class="social-networks-list__icon" width="20" height="20">
-                  <use href="./img/sprite.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-networks-list__item">
-              <a class="social-networks-list__link" href="">
-                <svg class="social-networks-list__icon" width="20" height="20">
-                  <use href="./img/sprite.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        
+        
+        <form class="subscribe-form">
+          <b class="subscribe-form__text">Подпишитесь на рассылку</b>
+          <div class="subscribe-form__actions">
+            <input class="subscribe-form__input" type="email" name="email" placeholder="E-mail" />
+            <button class="subscribe-form__button" type="submit">
+              Подписаться
+              <svg class="subscribe-form__button-icon" width="24" height="24">
+                <use href="./img/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
         </div>
       </div>
-      
-      
-      <form class="subscribe-form">
-        <b class="subscribe-form__text">Подпишитесь на рассылку</b>
-        <div class="subscribe-form__actions">
-          <input class="subscribe-form__input" type="email" name="email" placeholder="E-mail" />
-          <button class="subscribe-form__button" type="submit">
-            Подписаться
-            <svg class="subscribe-form__button-icon" width="24" height="24">
-              <use href="./img/sprite.svg#icon-send"></use>
-            </svg>
-          </button>
-        </div>
-      </form>
-      </div>
-    </div>
      
 
     </footer>

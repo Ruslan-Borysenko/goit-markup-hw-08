@@ -17,7 +17,7 @@
 
   <body>
   <!-- Header -->
-  <header class="header-page portfolio">
+  <header class="header-page">
     <div class="container">
       <div class="header-flex-wrapper">
   
@@ -65,9 +65,9 @@
     
     <!-- Main -->
     <main>
-      <!-- Our portfolio -->
-      <section class="section">
-        <div class="container portfolio-container">
+      <!-- Portfolio -->
+      <section class="section portfolio">
+        <div class="container">
           <h1 class="section-title portfolio-title">Портфолио</h1>
           <ul class="nav-portfolio">
             <li class="nav-portfolio__item"><button class="nav-portfolio__button" type="button">Все</button></li>
@@ -81,7 +81,31 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link" href="">
                 <div class="portfolio-list__img-wrapper">
-                  <img src="./img/portfolio1.jpg" alt="Открытая страница веб-сайта на ноутбуке" width="370" height="294" />
+                    <picture>
+                      <source srcset="./img/examples-1-450img@1x.webp 450w,
+                                                  ./img/examples-1-450img@2x.webp 900w" media="(max-width: 767px)" type="image/webp"
+                        sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                      <source srcset="./img/examples-1-354img@1x.webp 354w,
+                                                  ./img/examples-1-354img@2x.webp 708w"
+                        media="(min-width: 768px) and (max-width: 1199px)" type="image/webp"
+                        sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                      <source srcset="./img/examples-1-370img@1x.webp 370w,
+                                                  ./img/examples-1-370img@2x.webp 740w" media="(min-width: 1200px)" type="image/webp"
+                        sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    
+                      <source srcset="./img/examples-1-450img@1x.jpg 450w,
+                                                  ./img/examples-1-450img@2x.jpg 900w" media="(max-width: 767px)"
+                        sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                      <source srcset="./img/examples-1-354img@1x.jpg 354w,
+                                                ./img/examples-1-354img@2x.jpg 708w" media="(min-width: 768px) and (max-width: 1199px)"
+                        sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                      <source srcset="./img/examples-1-370img@1x.jpg 370w,
+                                                  ./img/examples-1-370img@2x.jpg 740w" media="(min-width: 1200px)"
+                        sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    
+                      <img loading="lazy" class="image" src="./img/examples-1-354img@1x.jpg" alt="Титульная страница сайта отрытая на ноутбуке" />
+                    </picture>
+                  
                   <div class="portfolio-list__pop-up-content-box">
                     <p class="portfolio-list__pop-up-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                     шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -97,7 +121,32 @@
             <li class="portfolio-list__item">
               <a class="link portfolio-list__link" href="">
                 <div class="portfolio-list__img-wrapper">
-                  <img src="./img/portfolio2.jpg" alt="Постер с двумя баскетболистами" width="370" height="294" />
+                  <picture>
+                    <source srcset="./img/examples-2-450img@1x.webp 450w,
+                                                                  ./img/examples-2-450img@2x.webp 900w" media="(max-width: 767px)"
+                      type="image/webp" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    <source srcset="./img/examples-2-354img@1x.webp 354w,
+                                                                  ./img/examples-2-354img@2x.webp 708w"
+                      media="(min-width: 768px) and (max-width: 1199px)" type="image/webp"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    <source srcset="./img/examples-2-370img@1x.webp 370w,
+                                                                  ./img/examples-2-370img@2x.webp 740w" media="(min-width: 1200px)"
+                      type="image/webp" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                  
+                    <source srcset="./img/examples-2-450img@1x.jpg 450w,
+                                                                  ./img/examples-2-450img@2x.jpg 900w" media="(max-width: 767px)"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    <source srcset="./img/examples-2-354img@1x.jpg 354w,
+                                                                ./img/examples-2-354img@2x.jpg 708w"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    <source srcset="./img/examples-2-370img@1x.jpg 370w,
+                                                                  ./img/examples-2-370img@2x.jpg 740w" media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                  
+                    <img loading="lazy" class="image" src="./img/examples-2-354img@1x.jpg" alt="Постер с двумя баскетболистами" />
+                  </picture>
+                  
                   <div class="portfolio-list__pop-up-content-box">
                     <p class="portfolio-list__pop-up-text">Технокряк это современная площадка распространения коронавируса. Компании
                       используют эту платформу для цифрового
@@ -114,7 +163,31 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link" href="">
                 <div class="portfolio-list__img-wrapper">
-                  <img src="./img/portfolio3.jpg" alt="Логотип морского ресторана с изображением рыбы" width="370" height="294" />
+                  <picture>
+                    <source srcset="./img/examples-3-450img@1x.webp 450w,
+                                                                  ./img/examples-3-450img@2x.webp 900w" media="(max-width: 767px)"
+                      type="image/webp" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    <source srcset="./img/examples-3-354img@1x.webp 354w,
+                                                                  ./img/examples-3-354img@2x.webp 708w"
+                      media="(min-width: 768px) and (max-width: 1199px)" type="image/webp"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    <source srcset="./img/examples-3-370img@1x.webp 370w,
+                                                                  ./img/examples-3-370img@2x.webp 740w" media="(min-width: 1200px)"
+                      type="image/webp" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                  
+                    <source srcset="./img/examples-3-450img@1x.jpg 450w,
+                                                                  ./img/examples-3-450img@2x.jpg 900w" media="(max-width: 767px)"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    <source srcset="./img/examples-3-354img@1x.jpg 354w,
+                                                                ./img/examples-3-354img@2x.jpg 708w"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    <source srcset="./img/examples-3-370img@1x.jpg 370w,
+                                                                  ./img/examples-3-370img@2x.jpg 740w" media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                  
+                    <img loading="lazy" class="image" src="./img/examples-3-354img@1x.jpg" alt="Логотип морского ресторана с изображением рыбы" />
+                  </picture>
                   <div class="portfolio-list__pop-up-content-box">
                     <p class="portfolio-list__pop-up-text">Технокряк это современная площадка распространения коронавируса. Компании
                       используют эту платформу для цифрового
@@ -131,7 +204,31 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link" href="">
                 <div class="portfolio-list__img-wrapper">
-                  <img src="./img/portfolio4.jpg" alt="Беспроводные наушники" width="370" height="294" />
+                  <picture>
+                    <source srcset="./img/examples-4-450img@1x.webp 450w,
+                                                                  ./img/examples-4-450img@2x.webp 900w" media="(max-width: 767px)"
+                      type="image/webp" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    <source srcset="./img/examples-4-354img@1x.webp 354w,
+                                                                  ./img/examples-4-354img@2x.webp 708w"
+                      media="(min-width: 768px) and (max-width: 1199px)" type="image/webp"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    <source srcset="./img/examples-4-370img@1x.webp 370w,
+                                                                  ./img/examples-4-370img@2x.webp 740w" media="(min-width: 1200px)"
+                      type="image/webp" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                  
+                    <source srcset="./img/examples-4-450img@1x.jpg 450w,
+                                                                  ./img/examples-4-450img@2x.jpg 900w" media="(max-width: 767px)"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    <source srcset="./img/examples-4-354img@1x.jpg 354w,
+                                                                ./img/examples-4-354img@2x.jpg 708w"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    <source srcset="./img/examples-4-370img@1x.jpg 370w,
+                                                                  ./img/examples-4-370img@2x.jpg 740w" media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                  
+                    <img loading="lazy" class="image" src="./img/examples-4-354img@1x.jpg" alt="Беспроводные наушники" />
+                  </picture>
                   <div class="portfolio-list__pop-up-content-box">
                     <p class="portfolio-list__pop-up-text">Технокряк это современная площадка распространения коронавируса. Компании
                       используют эту платформу для цифрового
@@ -148,7 +245,31 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link" href="">
                 <div class="portfolio-list__img-wrapper">
-                  <img src="./img/portfolio5.jpg" alt="Две бумажные коробки белого и коричневого цвета" width="370" height="294" />
+                  <picture>
+                    <source srcset="./img/examples-5-450img@1x.webp 450w,
+                                                                  ./img/examples-5-450img@2x.webp 900w" media="(max-width: 767px)"
+                      type="image/webp" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    <source srcset="./img/examples-5-354img@1x.webp 354w,
+                                                                  ./img/examples-5-354img@2x.webp 708w"
+                      media="(min-width: 768px) and (max-width: 1199px)" type="image/webp"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    <source srcset="./img/examples-5-370img@1x.webp 370w,
+                                                                  ./img/examples-5-370img@2x.webp 740w" media="(min-width: 1200px)"
+                      type="image/webp" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                  
+                    <source srcset="./img/examples-5-450img@1x.jpg 450w,
+                                                                  ./img/examples-5-450img@2x.jpg 900w" media="(max-width: 767px)"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    <source srcset="./img/examples-5-354img@1x.jpg 354w,
+                                                                ./img/examples-5-354img@2x.jpg 708w"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    <source srcset="./img/examples-5-370img@1x.jpg 370w,
+                                                                  ./img/examples-5-370img@2x.jpg 740w" media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                  
+                    <img loading="lazy" class="image" src="./img/examples-5-354img@1x.jpg" alt="Две бумажные коробки белого и коричневого цвета" />
+                  </picture>
                   <div class="portfolio-list__pop-up-content-box">
                     <p class="portfolio-list__pop-up-text">Технокряк это современная площадка распространения коронавируса. Компании
                       используют эту платформу для цифрового
@@ -165,7 +286,31 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link" href="">
                 <div class="portfolio-list__img-wrapper">
-                  <img src="./img/portfolio6.jpg" alt="Монитор apple" width="370" height="294" />
+                  <picture>
+                    <source srcset="./img/examples-6-450img@1x.webp 450w,
+                                                                  ./img/examples-6-450img@2x.webp 900w" media="(max-width: 767px)"
+                      type="image/webp" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    <source srcset="./img/examples-6-354img@1x.webp 354w,
+                                                                  ./img/examples-6-354img@2x.webp 708w"
+                      media="(min-width: 768px) and (max-width: 1199px)" type="image/webp"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    <source srcset="./img/examples-6-370img@1x.webp 370w,
+                                                                  ./img/examples-6-370img@2x.webp 740w" media="(min-width: 1200px)"
+                      type="image/webp" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                  
+                    <source srcset="./img/examples-6-450img@1x.jpg 450w,
+                                                                  ./img/examples-6-450img@2x.jpg 900w" media="(max-width: 767px)"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    <source srcset="./img/examples-6-354img@1x.jpg 354w,
+                                                                ./img/examples-6-354img@2x.jpg 708w"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    <source srcset="./img/examples-6-370img@1x.jpg 370w,
+                                                                  ./img/examples-6-370img@2x.jpg 740w" media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                  
+                    <img loading="lazy" class="image" src="./img/examples-6-354img@1x.jpg" alt="Монитор apple" />
+                  </picture>
                   <div class="portfolio-list__pop-up-content-box">
                     <p class="portfolio-list__pop-up-text">Технокряк это современная площадка распространения коронавируса. Компании
                       используют эту платформу для цифрового
@@ -182,7 +327,31 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link" href="">
                 <div class="portfolio-list__img-wrapper">
-                  <img src="./img/portfolio7.jpg" alt="Раскрытый журнал" width="370" height="294" />
+                  <picture>
+                    <source srcset="./img/examples-7-450img@1x.webp 450w,
+                                                                  ./img/examples-7-450img@2x.webp 900w" media="(max-width: 767px)"
+                      type="image/webp" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    <source srcset="./img/examples-7-354img@1x.webp 354w,
+                                                                  ./img/examples-7-354img@2x.webp 708w"
+                      media="(min-width: 768px) and (max-width: 1199px)" type="image/webp"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    <source srcset="./img/examples-7-370img@1x.webp 370w,
+                                                                  ./img/examples-7-370img@2x.webp 740w" media="(min-width: 1200px)"
+                      type="image/webp" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                  
+                    <source srcset="./img/examples-7-450img@1x.jpg 450w,
+                                                                  ./img/examples-7-450img@2x.jpg 900w" media="(max-width: 767px)"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    <source srcset="./img/examples-7-354img@1x.jpg 354w,
+                                                                ./img/examples-7-354img@2x.jpg 708w"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    <source srcset="./img/examples-7-370img@1x.jpg 370w,
+                                                                  ./img/examples-7-370img@2x.jpg 740w" media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                  
+                    <img loading="lazy" class="image" src="./img/examples-7-354img@1x.jpg" alt="Раскрытый журнал" />
+                  </picture>
                   <div class="portfolio-list__pop-up-content-box">
                     <p class="portfolio-list__pop-up-text">Технокряк это современная площадка распространения коронавируса. Компании
                       используют эту платформу для цифрового
@@ -199,7 +368,31 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link" href="">
                 <div class="portfolio-list__img-wrapper">
-                  <img src="./img/portfolio8.jpg" alt="Белая этикетка" width="370" height="294" />
+                  <picture>
+                    <source srcset="./img/examples-8-450img@1x.webp 450w,
+                                                                  ./img/examples-8-450img@2x.webp 900w" media="(max-width: 767px)"
+                      type="image/webp" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    <source srcset="./img/examples-8-354img@1x.webp 354w,
+                                                                  ./img/examples-8-354img@2x.webp 708w"
+                      media="(min-width: 768px) and (max-width: 1199px)" type="image/webp"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    <source srcset="./img/examples-8-370img@1x.webp 370w,
+                                                                  ./img/examples-8-370img@2x.webp 740w" media="(min-width: 1200px)"
+                      type="image/webp" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                  
+                    <source srcset="./img/examples-8-450img@1x.jpg 450w,
+                                                                  ./img/examples-8-450img@2x.jpg 900w" media="(max-width: 767px)"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    <source srcset="./img/examples-8-354img@1x.jpg 354w,
+                                                                ./img/examples-8-354img@2x.jpg 708w"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    <source srcset="./img/examples-8-370img@1x.jpg 370w,
+                                                                  ./img/examples-8-370img@2x.jpg 740w" media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                  
+                    <img loading="lazy" class="image" src="./img/examples-8-354img@1x.jpg" alt="Белая этикетка" />
+                  </picture>
                   <div class="portfolio-list__pop-up-content-box">
                     <p class="portfolio-list__pop-up-text">Технокряк это современная площадка распространения коронавируса. Компании
                       используют эту платформу для цифрового
@@ -216,7 +409,31 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__link" href="">
                 <div class="portfolio-list__img-wrapper">
-                  <img src="./img/portfolio9.jpg" alt="Мужчина работает за ноутбуком" width="370" height="294" />
+                  <picture>
+                    <source srcset="./img/examples-9-450img@1x.webp 450w,
+                                                                  ./img/examples-9-450img@2x.webp 900w" media="(max-width: 767px)"
+                      type="image/webp" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    <source srcset="./img/examples-9-354img@1x.webp 354w,
+                                                                  ./img/examples-9-354img@2x.webp 708w"
+                      media="(min-width: 768px) and (max-width: 1199px)" type="image/webp"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    <source srcset="./img/examples-9-370img@1x.webp 370w,
+                                                                  ./img/examples-9-370img@2x.webp 740w" media="(min-width: 1200px)"
+                      type="image/webp" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                  
+                    <source srcset="./img/examples-9-450img@1x.jpg 450w,
+                                                                  ./img/examples-9-450img@2x.jpg 900w" media="(max-width: 767px)"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    <source srcset="./img/examples-9-354img@1x.jpg 354w,
+                                                                ./img/examples-9-354img@2x.jpg 708w"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                    <source srcset="./img/examples-9-370img@1x.jpg 370w,
+                                                                  ./img/examples-9-370img@2x.jpg 740w" media="(min-width: 1200px)"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                  
+                    <img loading="lazy" class="image" src="./img/examples-9-354img@1x.jpg" alt="Мужчина работает за ноутбуком" />
+                  </picture>
                   <div class="portfolio-list__pop-up-content-box">
                     <p class="portfolio-list__pop-up-text">Технокряк это современная площадка распространения коронавируса. Компании
                       используют эту платформу для цифрового
