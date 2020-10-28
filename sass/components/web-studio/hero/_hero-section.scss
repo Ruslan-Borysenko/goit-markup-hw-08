@@ -13,59 +13,55 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: $linear-gradient, url(./../../../../img/hero-bg-480@1x.jpg);
+  background-image: $linear-gradient, url(./../../../img/hero-bg-480@1x.jpg);
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: $linear-gradient,
-      url(./../../../../img/hero-bg-480@2x.jpg);
+    background-image: $linear-gradient, url(./../../../img/hero-bg-480@2x.jpg);
   }
 
   @media screen and (min-device-pixel-ratio: 3),
     screen and (min-resolution: 288dpi),
     screen and (min-resolution: 3dppx) {
-    background-image: $linear-gradient,
-      url(./../../../../img/hero-bg-480@3x.jpg);
+    background-image: $linear-gradient, url(./../../../img/hero-bg-480@3x.jpg);
   }
 
   @media screen and(min-width: $tablet) {
-    background-image: $linear-gradient,
-      url(./../../../../img/hero-bg-768@1x.jpg);
+    background-image: $linear-gradient, url(../../../../img/hero-bg-768@1x.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       background-image: $linear-gradient,
-        url(./../../../../img/hero-bg-768@2x.jpg);
+        url(../../../../img/hero-bg-768@2x.jpg);
     }
 
     @media screen and (min-device-pixel-ratio: 3),
       screen and (min-resolution: 288dpi),
       screen and (min-resolution: 3dppx) {
       background-image: $linear-gradient,
-        url(./../../../../img/hero-bg-768@3x.jpg);
+        url(../../../../img/hero-bg-768@3x.jpg);
     }
   }
 
   @media screen and(min-width: $desktop) {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: $linear-gradient,
-      url(./../../../../img/hero-bg-1600@1x.jpg);
+    background-image: $linear-gradient, url(../../../../img/hero-bg-1600@1x.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       background-image: $linear-gradient,
-        url(./../../../../img/hero-bg-1600@2x.jpg);
+        url(../../../../img/hero-bg-1600@2x.jpg);
     }
 
     @media screen and (min-device-pixel-ratio: 3),
       screen and (min-resolution: 288dpi),
       screen and (min-resolution: 3dppx) {
       background-image: $linear-gradient,
-        url(./../../../../img/hero-bg-1600@3x.jpg);
+        url(../../../../img/hero-bg-1600@3x.jpg);
     }
   }
 }
