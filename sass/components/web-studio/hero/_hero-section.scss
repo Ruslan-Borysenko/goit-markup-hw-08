@@ -28,7 +28,7 @@
   }
 
   @media screen and(min-width: $tablet) {
-    background-image: $linear-gradient, url(../../../../img/hero-bg-768@1x.jpg);
+    background-image: $linear-gradient, url(./../../../img/hero-bg-768@1x.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
