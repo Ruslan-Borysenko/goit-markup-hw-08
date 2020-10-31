@@ -61,7 +61,8 @@
   background-color: getColor("portfolio-pop-up-content-box");
   @include transition(transform);
 
-  .portfolio-list__link:hover & {
+  .portfolio-list__link:hover &,
+  .portfolio-list__link:focus & {
     transform: translateY(0);
   }
 }
