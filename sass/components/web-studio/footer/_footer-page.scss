@@ -1,5 +1,4 @@
 /* Footer */
-
 // footer-page
 .footer-page {
   padding-top: 60px;
@@ -7,6 +6,7 @@
   background-color: getColor("footer-background");
 }
 
+// Головна обгортка
 .footer-flex-wrapper {
   @media screen and(min-width: $desktop) {
     display: flex;
@@ -15,34 +15,28 @@
   }
 }
 
-// footer-logo-and-address-wrapper
-.footer-logo-and-address-wrapper {
-  @media screen and (min-width: $tablet) {
-    text-align: left;
-    display: inline-block;
-  }
-}
-
-.call-text-and-social-network {
-  @media screen and (min-width: $tablet) {
-    display: inline-block;
-    margin-left: 70px;
-  }
-}
-
+// Обгорта для секції 1 та 2
 .test {
   @media screen and(min-width: $tablet) and (max-width: 1199px) {
     display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
   }
+
   @media screen and(min-width: $desktop) {
     display: flex;
     align-items: baseline;
   }
 }
 
-// footer-page-logo
+// FIRST SECTION
+.first {
+  @media screen and(max-width: 767px) {
+    margin-bottom: 60px;
+  }
+}
+
+// footer-page__logo
 .footer-page__logo {
   display: block;
   margin-bottom: 20px;
@@ -55,10 +49,6 @@
 // contacts
 .contacts {
   display: block;
-
-  @media screen and(max-width: 767px) {
-    margin-bottom: 60px;
-  }
 
   @media screen and(max-width: 1199px) {
     text-align: center;
@@ -84,16 +74,14 @@
   color: getColor("third");
 }
 
-// call-text-and-social-network
-.call-text-and-social-network {
+// SECTION SECOND
+.second {
   @media screen and(max-width: 767px) {
     margin-bottom: 60px;
   }
-}
 
-.subscribe-form {
   @media screen and(min-width: $desktop) {
-    display: inline-block;
+    margin-left: 70px;
   }
 }
 
@@ -116,6 +104,19 @@
   }
 }
 
+// SECTION THIRD
+.third {
+  @media screen and(min-width: $desktop) {
+    display: flex;
+  }
+}
+
+.subscribe-form {
+  @media screen and(min-width: $desktop) {
+    display: inline-block;
+  }
+}
+
 .subscribe-form__actions {
   display: flex;
   flex-direction: column;
@@ -126,6 +127,7 @@
     align-items: baseline;
   }
 }
+
 .subscribe-form__input {
   margin-bottom: 20px;
   max-width: 450px;
@@ -162,4 +164,18 @@
 
 .subscribe-form__button-icon {
   margin-left: 10px;
+}
+
+.call-text-and-social-network {
+  @media screen and (min-width: $tablet) {
+    display: inline-block;
+    margin-left: 70px;
+  }
+}
+
+// call-text-and-social-network
+.call-text-and-social-network {
+  @media screen and(max-width: 767px) {
+    margin-bottom: 60px;
+  }
 }

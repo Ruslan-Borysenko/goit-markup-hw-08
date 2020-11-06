@@ -475,62 +475,58 @@
         </div>
       </section>
     </main>
-    <!-- Footer -->
+
     <footer class="footer-page" id="footer-page">
       <div class="container footer-flex-wrapper">
         <div class="test">
-          <div class="footer-logo-and-address-wrapper">
-            <section>
-              <a class="logo footer-page__logo" href="./index.html">Web<span class="logo__item-secondary">Studio</span></a>
+          <section class="first">
+            <a class="logo footer-page__logo" href="./index.html">Web<span class="logo__item-secondary">Studio</span></a>
 
-              <address class="contacts">
-                <a class="contacts__link contacts__link--text">г. Киев, пр-т Леси Украинки, 26</a>
-                <br />
-                <a class="contacts__link" href="mailto:info@example.com">info@example.com</a>
-                <br />
-                <a class="contacts__link" href="tel:+380991111111">+38 099 111 11 11</a>
-              </address>
-            </section>
-          </div>
+            <address class="contacts">
+              <a class="contacts__link contacts__link--text">г. Киев, пр-т Леси Украинки, 26</a>
+              <br />
+              <a class="contacts__link" href="mailto:info@example.com">info@example.com</a>
+              <br />
+              <a class="contacts__link" href="tel:+380991111111">+38 099 111 11 11</a>
+            </address>
+          </section>
 
-          <div class="call-text-and-social-network">
-            <section>
-              <b class="call-text">Присоединяйтесь</b>
-              <ul class="social-networks-list">
-                <li class="social-networks-list__item">
-                  <a class="social-networks-list__link" href="">
-                    <svg class="social-networks-list__icon" width="20" height="20">
-                      <use href="./img/sprite.svg#instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-networks-list__item">
-                  <a class="social-networks-list__link" href="">
-                    <svg class="social-networks-list__icon" width="20" height="20">
-                      <use href="./img/sprite.svg#twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-networks-list__item">
-                  <a class="social-networks-list__link" href="">
-                    <svg class="social-networks-list__icon" width="20" height="20">
-                      <use href="./img/sprite.svg#facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-networks-list__item">
-                  <a class="social-networks-list__link" href="">
-                    <svg class="social-networks-list__icon" width="20" height="20">
-                      <use href="./img/sprite.svg#linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </section>
-          </div>
+          <section class="second">
+            <b class="call-text">Присоединяйтесь</b>
+            <ul class="social-networks-list">
+              <li class="social-networks-list__item">
+                <a class="social-networks-list__link" href="">
+                  <svg class="social-networks-list__icon" width="20" height="20">
+                    <use href="./img/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-networks-list__item">
+                <a class="social-networks-list__link" href="">
+                  <svg class="social-networks-list__icon" width="20" height="20">
+                    <use href="./img/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-networks-list__item">
+                <a class="social-networks-list__link" href="">
+                  <svg class="social-networks-list__icon" width="20" height="20">
+                    <use href="./img/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-networks-list__item">
+                <a class="social-networks-list__link" href="">
+                  <svg class="social-networks-list__icon" width="20" height="20">
+                    <use href="./img/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </section>
         </div>
 
-        <section>
+        <section class="third">
           <form class="subscribe-form">
             <b class="subscribe-form__text">Подпишитесь на рассылку</b>
             <div class="subscribe-form__actions">
@@ -546,6 +542,8 @@
         </section>
       </div>
     </footer>
+
+    <!-- Backdrop and modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__button-close" data-modal-close>
@@ -553,9 +551,8 @@
             <use href="./img/sprite.svg#close"></use>
           </svg>
         </button>
+        <h2 class="modal-form__title">Оставьте свои данные, мы вам перезвоним</h2>
         <form class="modal-form">
-          <h2 class="modal-form__title">Оставьте свои данные, мы вам перезвоним</h2>
-
           <div class="modal-form__inputs">
             <label class="modal-form__form-field-input">
               <span class="modal-form__label">Имя</span>
