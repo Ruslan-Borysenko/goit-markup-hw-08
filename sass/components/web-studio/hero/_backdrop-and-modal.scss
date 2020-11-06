@@ -183,6 +183,7 @@
   height: 15px;
 
   border: 2px solid getColor("check-box");
+  border-radius: 2px;
 
   .modal-form__check:checked + & {
     border-color: getColor("accent");
