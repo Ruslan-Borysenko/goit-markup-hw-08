@@ -1,5 +1,6 @@
 .team-cards-list {
   @extend %list;
+  text-align: center;
 
   @media screen and(min-width: $tablet) {
     display: flex;
@@ -67,7 +68,6 @@
 .team-cards-list__occupation {
   font-size: 16px;
   line-height: 1.18;
-  text-align: center;
   letter-spacing: 0.03em;
 }
 

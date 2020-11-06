@@ -8,13 +8,39 @@
 
 // Головна обгортка
 .footer-flex-wrapper {
-  @media screen and(min-width: $desktop) {
+  @media screen and(min-width: $tablet) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
   }
 }
 
+.test-common {
+  @media screen and(min-width: $tablet) {
+    width: 50%;
+  }
+
+  @media screen and(min-width: $desktop) {
+    width: calc((50% - 45px) / 2);
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &:last-child {
+    @media screen and(min-width: $tablet) {
+      width: 100%;
+    }
+
+    @media screen and(min-width: $desktop) {
+      width: calc(50% - 15px);
+    }
+  }
+}
 // Обгорта для секції 1 та 2
 .test {
   @media screen and(min-width: $tablet) and (max-width: 1199px) {

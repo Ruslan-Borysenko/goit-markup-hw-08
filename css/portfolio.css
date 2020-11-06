@@ -249,9 +249,9 @@ img {
 }
 
 .social-networks-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -724,17 +724,49 @@ img {
   background-color: #2f303a;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .footer-flex-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .test-common {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .test-common {
+    width: calc((50% - 45px) / 2);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .test-common:not(:last-child) {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .test-common:last-child {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .test-common:last-child {
+    width: calc(50% - 15px);
   }
 }
 
