@@ -18,8 +18,8 @@ $colors: (
   "footer-background": #2f303a,
   "clients-section": #ffffff,
   "portfolio-section": #ffffff,
-  "container-outline": teal,
-  "container-bck": bisque,
+  // "container-outline": teal,
+  // "container-bck": bisque,,
 );
 
 @function getColor($key) {

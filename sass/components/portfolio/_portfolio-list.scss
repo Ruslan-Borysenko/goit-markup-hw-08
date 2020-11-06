@@ -2,13 +2,10 @@
   @extend %list;
   display: flex;
   flex-wrap: wrap;
-
-  @media screen and(min-width: $tablet) {
-    margin-right: -30px;
-  }
 }
 
 .portfolio-list__item {
+  border: 1px solid #eeeeee;
   margin-bottom: 30px;
 
   &:nth-last-child(-n + 1) {
@@ -27,8 +24,9 @@
     }
   }
 
+  // Розраховуємо ширину контейнера для планшета
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
-    flex-basis: calc(100% / 2 - 30px);
+    @include itemWidth(2);
   }
 
   &:nth-child(2n) {
@@ -37,8 +35,9 @@
     }
   }
 
+  // Розраховуємо ширину контейнера для ПК
   @media screen and (min-width: $desktop) {
-    flex-basis: calc(100% / 3 - 30px);
+    @include itemWidth(3);
 
     &:nth-child(3n) {
       margin-right: 0px;

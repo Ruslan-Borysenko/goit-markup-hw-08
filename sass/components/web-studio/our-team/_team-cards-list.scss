@@ -9,10 +9,8 @@
     flex-wrap: wrap;
   }
 
-  @media screen and(min-width: $tablet) {
-    margin-right: -30px;
-    margin-bottom: -30px;
-  }
+  // @media screen and(min-width: $tablet) {
+  // }
 }
 
 .team-cards-list__item {
@@ -37,7 +35,7 @@
 
   & {
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
-      flex-basis: calc(100% / 2 - 30px);
+      @include itemWidth(2);
 
       &:nth-child(2n) {
         margin-right: 0;
@@ -52,7 +50,7 @@
   & {
     @media screen and (min-width: $desktop) {
       margin-bottom: 0;
-      flex-basis: calc(100% / 4 - 30px);
+      @include itemWidth(4);
 
       &:nth-child(4n) {
         margin-right: 0px;

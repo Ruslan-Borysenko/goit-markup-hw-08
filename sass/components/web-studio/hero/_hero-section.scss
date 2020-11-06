@@ -3,6 +3,13 @@
   text-align: center;
 }
 
+// hero-content-wrapper
+.hero-content-wrapper {
+  max-width: 696px;
+  display: inline-block;
+  text-align: center;
+}
+
 // hero-overlay
 .hero-overlay {
   max-width: 1600px;
@@ -53,6 +60,7 @@
 // hero-title
 .hero-title {
   margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;

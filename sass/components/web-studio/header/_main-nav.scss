@@ -81,6 +81,8 @@
     @media screen and(min-width: $tablet) {
       display: flex;
       align-items: center;
+      margin-left: 88px;
+      flex-grow: 1;
     }
   }
 }

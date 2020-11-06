@@ -60,71 +60,9 @@
       <!-- Hero -->
       <section class="hero">
         <div class="hero-overlay">
-          <h1 class="hero-title">
-            Эффективные решения<br />
-            для вашего бизнеса
-          </h1>
-          <button class="button-order-service" data-modal-open>Заказать услугу</button>
-          <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-              <button class="modal__button-close" data-modal-close>
-                <svg class="modal__icon-close" width="30" height="30" aria-label="Закрытие модального окна">
-                  <use href="./img/sprite.svg#close"></use>
-                </svg>
-              </button>
-              <form class="modal-form">
-                <h2 class="modal-form__title">Оставьте свои данные, мы вам перезвоним</h2>
-
-                <div class="modal-form__inputs">
-                  <label class="modal-form__form-field-input">
-                    <span class="modal-form__label">Имя</span>
-                    <span class="modal-form__input-wrapper">
-                      <input class="modal-form__input" type="text" name="name" />
-                      <svg class="modal-form__icon" width="18" height="18">
-                        <use href="./img/sprite.svg#person-black"></use>
-                      </svg>
-                    </span>
-                  </label>
-
-                  <label class="modal-form__form-field-input">
-                    <span class="modal-form__label">Телефон</span>
-                    <span class="modal-form__input-wrapper">
-                      <input class="modal-form__input" type="tel" name="telephone" />
-                      <svg class="modal-form__icon" width="18" height="18">
-                        <use href="./img/sprite.svg#phone-black"></use>
-                      </svg>
-                    </span>
-                  </label>
-
-                  <label class="modal-form__form-field-input">
-                    <span class="modal-form__label">Почта</span>
-                    <span class="modal-form__input-wrapper">
-                      <input class="modal-form__input" type="email" name="email" />
-                      <svg class="modal-form__icon" width="18" height="18">
-                        <use href="./img/sprite.svg#email-black"></use>
-                      </svg>
-                    </span>
-                  </label>
-
-                  <label class="modal-form__form-field-input">
-                    <span class="modal-form__label">Комментарий</span>
-                    <textarea class="modal-form__comment" name="comment" placeholder="Введите текст"></textarea>
-                  </label>
-                </div>
-
-                <label class="modal-form__form-field-policy">
-                  <input class="modal-form__check" type="checkbox" name="policy" />
-                  <span class="modal-form__checkbox"></span>
-                  <span class="modal-form__label-policy"
-                    >Соглашаюсь с рассылкой и принимаю <a class="modal-form__link-policy" href="">Условия договора</a></span
-                  >
-                </label>
-
-                <div class="modal-form__button-wrapper">
-                  <button class="button modal-form__button">Отправить</button>
-                </div>
-              </form>
-            </div>
+          <div class="hero-content-wrapper">
+            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+            <button class="button-order-service" data-modal-open>Заказать услугу</button>
           </div>
         </div>
       </section>
@@ -539,22 +477,24 @@
     </main>
     <!-- Footer -->
     <footer class="footer-page" id="footer-page">
-      <div class="container">
-        <div class="footer-flex-wrapper">
-          <div class="test">
-            <div class="footer-logo-and-address-wrapper">
+      <div class="container footer-flex-wrapper">
+        <div class="test">
+          <div class="footer-logo-and-address-wrapper">
+            <section>
               <a class="logo footer-page__logo" href="./index.html">Web<span class="logo__item-secondary">Studio</span></a>
 
-              <address class="nav-address-footer">
-                <span class="nav-address-footer__text">г. Киев, пр-т Леси Украинки, 26</span>
+              <address class="contacts">
+                <a class="contacts__link contacts__link--text">г. Киев, пр-т Леси Украинки, 26</a>
                 <br />
-                <a class="nav-address-footer__link" href="mailto:info@example.com">info@example.com</a>
+                <a class="contacts__link" href="mailto:info@example.com">info@example.com</a>
                 <br />
-                <a class="nav-address-footer__link" href="tel:+380991111111">+38 099 111 11 11</a>
+                <a class="contacts__link" href="tel:+380991111111">+38 099 111 11 11</a>
               </address>
-            </div>
+            </section>
+          </div>
 
-            <div class="call-text-and-social-network">
+          <div class="call-text-and-social-network">
+            <section>
               <b class="call-text">Присоединяйтесь</b>
               <ul class="social-networks-list">
                 <li class="social-networks-list__item">
@@ -586,9 +526,11 @@
                   </a>
                 </li>
               </ul>
-            </div>
+            </section>
           </div>
+        </div>
 
+        <section>
           <form class="subscribe-form">
             <b class="subscribe-form__text">Подпишитесь на рассылку</b>
             <div class="subscribe-form__actions">
@@ -601,9 +543,70 @@
               </button>
             </div>
           </form>
-        </div>
+        </section>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__button-close" data-modal-close>
+          <svg class="modal__icon-close" width="30" height="30" aria-label="Закрытие модального окна">
+            <use href="./img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <form class="modal-form">
+          <h2 class="modal-form__title">Оставьте свои данные, мы вам перезвоним</h2>
+
+          <div class="modal-form__inputs">
+            <label class="modal-form__form-field-input">
+              <span class="modal-form__label">Имя</span>
+              <span class="modal-form__input-wrapper">
+                <input class="modal-form__input" type="text" name="name" />
+                <svg class="modal-form__icon" width="18" height="18">
+                  <use href="./img/sprite.svg#person-black"></use>
+                </svg>
+              </span>
+            </label>
+
+            <label class="modal-form__form-field-input">
+              <span class="modal-form__label">Телефон</span>
+              <span class="modal-form__input-wrapper">
+                <input class="modal-form__input" type="tel" name="telephone" />
+                <svg class="modal-form__icon" width="18" height="18">
+                  <use href="./img/sprite.svg#phone-black"></use>
+                </svg>
+              </span>
+            </label>
+
+            <label class="modal-form__form-field-input">
+              <span class="modal-form__label">Почта</span>
+              <span class="modal-form__input-wrapper">
+                <input class="modal-form__input" type="email" name="email" />
+                <svg class="modal-form__icon" width="18" height="18">
+                  <use href="./img/sprite.svg#email-black"></use>
+                </svg>
+              </span>
+            </label>
+
+            <label class="modal-form__form-field-input">
+              <span class="modal-form__label">Комментарий</span>
+              <textarea class="modal-form__comment" name="comment" placeholder="Введите текст"></textarea>
+            </label>
+          </div>
+
+          <label class="modal-form__form-field-policy">
+            <input class="modal-form__check" type="checkbox" name="policy" />
+            <span class="modal-form__checkbox"></span>
+            <span class="modal-form__label-policy"
+              >Соглашаюсь с рассылкой и принимаю <a class="modal-form__link-policy" href="">Условия договора</a></span
+            >
+          </label>
+
+          <div class="modal-form__button-wrapper">
+            <button class="button modal-form__button">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>

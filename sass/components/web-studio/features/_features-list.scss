@@ -16,7 +16,8 @@
   & {
     @media screen and(min-width: $tablet) {
       margin-right: 30px;
-      flex-basis: calc(100% / 2 - 30px);
+      // flex-basis: calc(100% / 2 - 30px);
+      @include itemWidth(2);
     }
   }
 
@@ -34,7 +35,7 @@
 
   & {
     @media screen and(min-width: $desktop) {
-      flex-basis: calc(100% / 4 - 30px);
+      @include itemWidth(4);
 
       &:nth-last-child(-n + 1) {
         margin-right: 0;
@@ -60,7 +61,6 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
