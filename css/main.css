@@ -843,7 +843,7 @@ img {
 .modal-form__check:checked + .modal-form__checkbox {
   border-color: #2196f3;
   background-color: #2196f3;
-  background-image: url(../../../img/check.svg);
+  background-image: url(../img/check.svg);
   background-position: center;
   background-size: contain;
   background-origin: border-box;

@@ -188,7 +188,7 @@
   .modal-form__check:checked + & {
     border-color: getColor("accent");
     background-color: getColor("accent");
-    background-image: url(../../../img/check.svg);
+    background-image: url(../img/check.svg);
     background-position: center;
     background-size: contain;
     background-origin: border-box;
