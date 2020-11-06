@@ -1,0 +1,239 @@
+// backdrop
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  padding-top: 93px;
+  padding-bottom: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
+  overflow-y: scroll;
+
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+
+  @include transition(opacity);
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  &.is-hidden .modal {
+    transform: scale(0.5);
+  }
+}
+
+// modal
+.modal {
+  position: relative;
+  max-width: 460px;
+  padding: 40px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  transform: scale(1);
+  @include transition(transform);
+
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    max-width: 528px;
+
+    @include transition(translate);
+  }
+}
+
+// modal__button-close
+.modal__button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+}
+
+// modal__icon-close
+.modal__icon-close {
+  display: block;
+
+  .modal__button-close:hover &,
+  .modal__button-close:focus & {
+    --color3: #2196f3;
+  }
+}
+
+// modal-form__title
+.modal-form__title {
+  margin-bottom: 12px;
+
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: getColor("secondary");
+}
+
+// modal-form__inputs
+.modal-form__inputs {
+  margin-bottom: 20px;
+}
+
+// modal-form__form-field-input
+.modal-form__form-field-input {
+  display: block;
+}
+
+.modal-form__form-field-input:not(:last-child) {
+  margin-bottom: 10px;
+}
+// modal-form__label
+.modal-form__label {
+  display: inline-block;
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: getColor("primary");
+}
+
+.modal-form__input-wrapper {
+  position: relative;
+}
+
+// modal-form__input
+.modal-form__input {
+  width: 100%;
+  height: 40px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 42px;
+
+  @include transition(border-color);
+
+  .modal-form__form-field-input:focus-within & {
+    border-color: getColor("accent");
+    outline: none;
+  }
+}
+
+.modal-form__input,
+.modal-form__comment {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.modal-form__comment {
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+
+  resize: none;
+
+  @include transition(border-color);
+
+  .modal-form__form-field-input:focus-within & {
+    border-color: getColor("accent");
+    outline: none;
+  }
+}
+
+.modal-form__comment::placeholder {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+// modal-form__icon
+.modal-form__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+
+  @include transition(fill);
+
+  .modal-form__form-field-input:focus-within & {
+    fill: getColor("accent");
+  }
+}
+
+// modal-form__check
+.modal-form__check {
+  @extend %visually-hidden;
+}
+
+// modal-form__checkbox
+.modal-form__checkbox {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  vertical-align: middle;
+
+  border: 2px solid getColor("check-box");
+  border-radius: 2px;
+
+  .modal-form__check:checked + & {
+    border-color: getColor("accent");
+    background-color: getColor("accent");
+    background-image: url(../img/check.svg);
+    background-position: center;
+    background-size: contain;
+    background-origin: border-box;
+  }
+}
+
+// modal-form__label-policy
+.modal-form__label-policy {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: getColor("primary");
+}
+
+// modal-form__form-field-policy
+.modal-form__form-field-policy {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+// modal-form__link-policy
+.modal-form__link-policy {
+  color: getColor("accent");
+}
+
+// modal-form__button-wrapper
+.modal-form__button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+// modal-form__button
+.modal-form__button {
+  @extend %button;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 56px;
+  padding-right: 55px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  @include transition(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}
