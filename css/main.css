@@ -1279,6 +1279,12 @@ img {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .test-common {
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .test-common {
     width: 50%;
@@ -1306,35 +1312,6 @@ img {
 @media screen and (min-width: 1200px) {
   .test-common:last-child {
     width: calc(50% - 15px);
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .test {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .test {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .first {
-    margin-bottom: 60px;
   }
 }
 
@@ -1376,18 +1353,6 @@ img {
   color: #ffffff;
 }
 
-@media screen and (max-width: 767px) {
-  .second {
-    margin-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .second {
-    margin-left: 70px;
-  }
-}
-
 .call-text,
 .subscribe-form__text {
   display: block;
@@ -1405,14 +1370,6 @@ img {
   .call-text,
   .subscribe-form__text {
     text-align: left;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .third {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
 }
 

@@ -17,6 +17,10 @@
 }
 
 .test-common {
+  @media screen and(max-width: 1199px) {
+    text-align: center;
+  }
+
   @media screen and(min-width: $tablet) {
     width: 50%;
   }
@@ -41,26 +45,13 @@
     }
   }
 }
-// Обгорта для секції 1 та 2
-.test {
-  @media screen and(min-width: $tablet) and (max-width: 1199px) {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 60px;
-  }
-
-  @media screen and(min-width: $desktop) {
-    display: flex;
-    align-items: baseline;
-  }
-}
 
 // FIRST SECTION
-.first {
-  @media screen and(max-width: 767px) {
-    margin-bottom: 60px;
-  }
-}
+// .first {
+//   @media screen and(max-width: 767px) {
+//     margin-bottom: 60px;
+//   }
+// }
 
 // footer-page__logo
 .footer-page__logo {
@@ -101,15 +92,15 @@
 }
 
 // SECTION SECOND
-.second {
-  @media screen and(max-width: 767px) {
-    margin-bottom: 60px;
-  }
+// .second {
+//   @media screen and(max-width: 767px) {
+//     margin-bottom: 60px;
+//   }
 
-  @media screen and(min-width: $desktop) {
-    margin-left: 70px;
-  }
-}
+//   @media screen and(min-width: $desktop) {
+//     margin-left: 70px;
+//   }
+// }
 
 .call-text,
 .subscribe-form__text {
@@ -131,11 +122,11 @@
 }
 
 // SECTION THIRD
-.third {
-  @media screen and(min-width: $desktop) {
-    display: flex;
-  }
-}
+// .third {
+//   @media screen and(min-width: $desktop) {
+//     display: flex;
+//   }
+// }
 
 .subscribe-form {
   @media screen and(min-width: $desktop) {
