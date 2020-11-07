@@ -185,7 +185,7 @@ img {
   .main-menu {
     display: none;
     position: absolute;
-    top: 100%;
+    top: calc(100% + 1px);
     left: 0;
     width: 100%;
     padding-top: 60px;
