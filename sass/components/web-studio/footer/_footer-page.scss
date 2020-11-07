@@ -168,6 +168,7 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: inherit;
+  color: getColor("third");
 
   @media screen and(min-width: $desktop) {
     margin-bottom: 0px;
