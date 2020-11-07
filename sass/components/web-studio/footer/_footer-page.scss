@@ -46,13 +46,6 @@
   }
 }
 
-// FIRST SECTION
-// .first {
-//   @media screen and(max-width: 767px) {
-//     margin-bottom: 60px;
-//   }
-// }
-
 // footer-page__logo
 .footer-page__logo {
   display: block;
@@ -91,17 +84,6 @@
   color: getColor("third");
 }
 
-// SECTION SECOND
-// .second {
-//   @media screen and(max-width: 767px) {
-//     margin-bottom: 60px;
-//   }
-
-//   @media screen and(min-width: $desktop) {
-//     margin-left: 70px;
-//   }
-// }
-
 .call-text,
 .subscribe-form__text {
   display: block;
@@ -120,13 +102,6 @@
     text-align: left;
   }
 }
-
-// SECTION THIRD
-// .third {
-//   @media screen and(min-width: $desktop) {
-//     display: flex;
-//   }
-// }
 
 .subscribe-form {
   @media screen and(min-width: $desktop) {
