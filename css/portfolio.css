@@ -718,7 +718,7 @@ img {
 }
 
 /* Footer */
-.footer-page {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
@@ -776,13 +776,13 @@ img {
   }
 }
 
-.footer-page__logo {
+.footer__logo {
   display: block;
   margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1199px) {
-  .footer-page__logo {
+  .footer__logo {
     text-align: center;
   }
 }
