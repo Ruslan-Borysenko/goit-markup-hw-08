@@ -71,6 +71,14 @@
   @extend %button;
   padding-left: 32px;
   padding-right: 32px;
+
+  @include transitions(background-color, color);
+
+  &:hover,
+  &:focus {
+    background-color: getColor("third");
+    color: getColor("secondary");
+  }
 }
 
 // button-order-service-wrapper

@@ -228,10 +228,12 @@
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  @include transition(background-color);
+
+  @include transitions(background-color, color);
 
   &:hover,
   &:focus {
-    background-color: #188ce8;
+    background-color: getColor("third");
+    color: getColor("secondary");
   }
 }

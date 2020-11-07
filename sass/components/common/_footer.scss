@@ -150,13 +150,30 @@
   padding-left: 29px;
   padding-right: 28px;
 
+  @include transitions(background-color, color);
+
   @media screen and(min-width: $desktop) {
     margin-left: 12px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: getColor("third");
+    color: getColor("secondary");
   }
 }
 
 .subscribe-form__button-icon {
   margin-left: 10px;
+
+  fill: getColor("third");
+
+  @include transition(fill);
+
+  .subscribe-form__button:hover &,
+  .subscribe-form__button:focus & {
+    fill: getColor("secondary");
+  }
 }
 
 .call-text-and-social-network {
