@@ -25,11 +25,11 @@
 
 // Стилі для футера
 
-.footer-page .social-networks-list {
+.footer .social-networks-list {
   margin-top: 20px;
 }
 
-.footer-page .social-networks-list__link {
+.footer .social-networks-list__link {
   background-color: rgba(255, 255, 255, 0.1);
 
   @media screen and(min-width: $desktop) {
@@ -37,14 +37,14 @@
   }
 }
 
-.footer-page .social-networks-list__link:hover,
-.footer-page .social-networks-list__link:focus {
+.footer .social-networks-list__link:hover,
+.footer .social-networks-list__link:focus {
   @media screen and(min-width: $desktop) {
     background-color: getColor("accent");
   }
 }
 
-.footer-page .social-networks-list__icon {
+.footer .social-networks-list__icon {
   fill: #ffffff;
 }
 
