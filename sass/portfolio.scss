@@ -1,5 +1,5 @@
-@import "./base/fonts";
 @import "./base/colors";
+@import "./base/fonts";
 @import "./base/reset-styles";
 @import "./utils/breakpoints";
 @import "./utils/placeholders";
@@ -7,12 +7,12 @@
 @import "./utils/mixins";
 @import "./components/common/section";
 @import "./components/common/container";
-@import "./components/web-studio/header/header-page";
-@import "./components/web-studio/header/main-nav";
+@import "./components/common/header/header-page";
+@import "./components/common/header/main-nav";
 @import "./components/common/logo";
 @import "./components/common/social-networks-list";
-@import "./components/web-studio/header/nav-site";
-@import "./components/web-studio/header/nav-address-header";
+@import "./components/common/header/nav-site";
+@import "./components/common/header/nav-address-header";
 @import "./components/portfolio/portfolio-section";
 @import "./components/portfolio/nav-portfolio";
 @import "./components/portfolio/portfolio-list";

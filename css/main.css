@@ -1280,37 +1280,37 @@ img {
 }
 
 @media screen and (max-width: 1199px) {
-  .test-common {
+  .footer-section {
     text-align: center;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .test-common {
+  .footer-section {
     width: 50%;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .test-common {
+  .footer-section {
     width: calc((50% - 45px) / 2);
   }
 }
 
 @media screen and (max-width: 1199px) {
-  .test-common:not(:last-child) {
+  .footer-section:not(:last-child) {
     margin-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .test-common:last-child {
+  .footer-section:last-child {
     width: 100%;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .test-common:last-child {
+  .footer-section:last-child {
     width: calc(50% - 15px);
   }
 }

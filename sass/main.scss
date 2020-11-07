@@ -7,12 +7,12 @@
 @import "./utils/mixins";
 @import "./components/common/section";
 @import "./components/common/container";
-@import "./components/web-studio/header/header-page";
-@import "./components/web-studio/header/main-nav";
+@import "./components/common/header/header-page";
+@import "./components/common/header/main-nav";
 @import "./components/common/logo";
 @import "./components/common/social-networks-list";
-@import "./components/web-studio/header/nav-site";
-@import "./components/web-studio/header/nav-address-header";
+@import "./components/common/header/nav-site";
+@import "./components/common/nav-address-header";
 @import "./components/web-studio/hero/hero-section";
 @import "./components/common/backdrop-and-modal";
 @import "./components/web-studio/features/features-section";
