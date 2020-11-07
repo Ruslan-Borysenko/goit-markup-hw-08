@@ -5,9 +5,13 @@
 
 // hero-content-wrapper
 .hero-content-wrapper {
-  max-width: 696px;
+  max-width: 360px;
   display: inline-block;
   text-align: center;
+
+  @media screen and(min-width: $desktop) {
+    max-width: 696px;
+  }
 }
 
 // hero-overlay
