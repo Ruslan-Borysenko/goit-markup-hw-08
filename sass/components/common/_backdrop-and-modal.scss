@@ -54,19 +54,28 @@
   position: absolute;
   top: 8px;
   right: 8px;
+  width: 30px;
+  height: 30px;
   padding: 0;
 
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
   background-color: transparent;
 }
 
 // modal__icon-close
 .modal__icon-close {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: block;
+
+  @include transition(fill);
 
   .modal__button-close:hover &,
   .modal__button-close:focus & {
-    --color3: #2196f3;
+    fill: getColor("accent");
   }
 }
 
