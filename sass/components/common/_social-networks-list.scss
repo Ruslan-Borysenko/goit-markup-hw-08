@@ -45,17 +45,17 @@
 }
 
 .footer .social-networks-list__icon {
-  fill: #ffffff;
+  fill: getColor("third");
 }
 
 .social-networks-list__icon {
   display: block;
 
-  fill: getColor("social-networks-icon");
+  fill: #afb1b8;
   @include transition(fill);
 
   .social-networks-list__link:hover &,
   .social-networks-list__link:focus & {
-    fill: getColor("social-networks-hover-icon");
+    fill: getColor("third");
   }
 }

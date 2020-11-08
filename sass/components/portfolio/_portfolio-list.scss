@@ -60,7 +60,7 @@
   width: 100%;
   height: 100%;
   transform: translateY(100%);
-  background-color: getColor("portfolio-pop-up-content-box");
+  background-color: rgba(33, 150, 243, 0.9);
   @include transition(transform);
 
   .portfolio-list__link:hover &,
@@ -71,7 +71,7 @@
 
 .portfolio-list__content-box {
   padding: 20px 24px;
-  background: #ffffff;
+  background: getColor("third");
   border: 1px solid #eeeeee;
   border-top: none;
   box-sizing: border-box;

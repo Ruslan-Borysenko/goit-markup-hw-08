@@ -3,15 +3,8 @@ $colors: (
   "secondary": #212121,
   "third": #ffffff,
   "accent": #2196f3,
-  "btn-text": #ffffff,
-  "hero-title": #ffffff,
   "header-logo": #000000,
   "footer-logo": #ffffff,
-  "social-networks-hover-icon": #ffffff,
-  "social-networks-icon": #afb1b8,
-  "portfolio-pop-up-content-box": rgba(33, 150, 243, 0.9),
-  "portfolio-pop-up-text": #ffffff,
-  "check-box": #212121,
   "features-section": #ffffff,
   "examples-section": #ffffff,
   "our-team-section": #f5f4fa,
@@ -19,7 +12,7 @@ $colors: (
   "clients-section": #ffffff,
   "portfolio-section": #ffffff,
   // "container-outline": teal,
-  // "container-bck": bisque,,
+  // "container-bck": bisque,,,,,,,,,,,,,,,
 );
 
 @function getColor($key) {
