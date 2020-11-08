@@ -27,16 +27,7 @@
   @include itemWidth(2);
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid #afb1b8;
   box-sizing: border-box;
-  border-radius: 4px;
-
-  @include transition(border-color);
-
-  &:hover,
-  &:focus {
-    border-color: getColor("accent");
-  }
 
   @media screen and(max-width: 767px) {
     &:nth-child(2n) {
@@ -77,7 +68,16 @@
   width: 100%;
   height: 90px;
 
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
   color: #afb1b8;
+
+  @include transition(border-color);
+
+  &:hover,
+  &:focus {
+    border-color: getColor("accent");
+  }
 }
 
 .clients-list__logo {
