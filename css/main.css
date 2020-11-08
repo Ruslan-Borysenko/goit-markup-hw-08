@@ -863,6 +863,7 @@ img {
 
 .modal-form__form-field-policy {
   display: inline-block;
+  margin-left: 12px;
   margin-bottom: 30px;
 }
 
