@@ -636,15 +636,6 @@ img {
 
 .backdrop {
   position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   top: 0;
   left: 0;
   width: 100%;
@@ -669,6 +660,20 @@ img {
 .backdrop.is-hidden .modal {
   -webkit-transform: scale(0);
           transform: scale(0);
+}
+
+@media screen and (min-width: 1200px) {
+  .backdrop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .modal {
