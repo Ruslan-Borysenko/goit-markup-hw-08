@@ -2,6 +2,9 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #757575;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 body.modal-open {
