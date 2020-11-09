@@ -116,6 +116,10 @@
 
 .portfolio-list__link {
   @extend %link;
+
+  &:focus {
+    outline: getColor("accent") auto 1px;
+  }
 }
 
 .portfolio-list__img-wrapper {

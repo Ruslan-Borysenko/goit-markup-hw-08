@@ -494,10 +494,6 @@ img {
   background-color: #2196f3;
 }
 
-.footer .social-networks-list {
-  margin-top: 20px;
-}
-
 .footer .social-networks-list__link {
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -510,8 +506,7 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .footer .social-networks-list__link:hover,
-  .footer .social-networks-list__link:focus {
+  .social-networks-list__link:hover, .social-networks-list__link:focus {
     background-color: #2196f3;
   }
 }

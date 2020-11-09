@@ -494,10 +494,6 @@ img {
   background-color: #2196f3;
 }
 
-.footer .social-networks-list {
-  margin-top: 20px;
-}
-
 .footer .social-networks-list__link {
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -510,8 +506,7 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .footer .social-networks-list__link:hover,
-  .footer .social-networks-list__link:focus {
+  .social-networks-list__link:hover, .social-networks-list__link:focus {
     background-color: #2196f3;
   }
 }
@@ -648,6 +643,10 @@ img {
   .portfolio-list__item:nth-child(3n) {
     margin-right: 0px;
   }
+}
+
+.portfolio-list__link:focus {
+  outline: #2196f3 auto 1px;
 }
 
 .portfolio-list__img-wrapper {
