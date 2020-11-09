@@ -23,27 +23,6 @@
   }
 }
 
-// Стилі для футера
-
-.footer .social-networks-list__link {
-  background-color: rgba(255, 255, 255, 0.1);
-
-  @media screen and(min-width: $desktop) {
-    @include transition(background-color);
-  }
-}
-
-.social-networks-list__link:hover,
-.social-networks-list__link:focus {
-  @media screen and(min-width: $desktop) {
-    background-color: getColor("accent");
-  }
-}
-
-.footer .social-networks-list__icon {
-  fill: getColor("third");
-}
-
 .social-networks-list__icon {
   display: block;
 
@@ -54,4 +33,19 @@
   .social-networks-list__link:focus & {
     fill: getColor("third");
   }
+}
+
+// Стилі для футера
+.footer .social-networks-list__link {
+  background-color: rgba(255, 255, 255, 0.1);
+  @include transition(background-color);
+}
+
+.social-networks-list__link:hover,
+.social-networks-list__link:focus {
+  background-color: getColor("accent");
+}
+
+.footer .social-networks-list__icon {
+  fill: getColor("third");
 }

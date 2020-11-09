@@ -75,8 +75,15 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 
+  @include transition(color);
+
   &:not(:nth-last-child(-n + 1)) {
     margin-bottom: 8px;
+  }
+
+  &:hover,
+  &:focus {
+    color: getColor("accent");
   }
 }
 
