@@ -183,9 +183,6 @@
 }
 
 // modal-form__check
-.modal-form__check {
-  @extend %visually-hidden;
-}
 
 // modal-form__checkbox
 .modal-form__checkbox {
@@ -234,7 +231,6 @@
 
 // modal-form__button
 .modal-form__button {
-  @extend %button;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 56px;
