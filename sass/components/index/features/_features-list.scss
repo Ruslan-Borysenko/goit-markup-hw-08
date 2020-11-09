@@ -16,7 +16,6 @@
   & {
     @media screen and(min-width: $tablet) {
       margin-right: 30px;
-      // flex-basis: calc(100% / 2 - 30px);
       @include itemWidth(2);
     }
   }
