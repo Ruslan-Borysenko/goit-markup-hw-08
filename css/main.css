@@ -802,6 +802,7 @@ img {
   outline: none;
 }
 
+.modal-form__comment,
 .modal-form__comment::-webkit-input-placeholder {
   font-size: 14px;
   line-height: 1.14;
@@ -809,6 +810,7 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.modal-form__comment,
 .modal-form__comment:-ms-input-placeholder {
   font-size: 14px;
   line-height: 1.14;
@@ -816,6 +818,7 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.modal-form__comment,
 .modal-form__comment::-ms-input-placeholder {
   font-size: 14px;
   line-height: 1.14;
@@ -823,6 +826,7 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.modal-form__comment,
 .modal-form__comment::placeholder {
   font-size: 14px;
   line-height: 1.14;
