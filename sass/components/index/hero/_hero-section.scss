@@ -1,0 +1,88 @@
+/*  Hero */
+.hero {
+  text-align: center;
+}
+
+// hero-content-wrapper
+.hero-content-wrapper {
+  max-width: 360px;
+  display: inline-block;
+  text-align: center;
+
+  @media screen and(min-width: $desktop) {
+    max-width: 696px;
+  }
+}
+
+// hero-overlay
+.hero-overlay {
+  max-width: 1600px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: $linear-gradient, url(../img/hero-bg-480@1x.jpg);
+  @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+    background-image: $linear-gradient, url(../img/hero-bg-480@2x.jpg);
+  }
+
+  @media screen and(min-width: $tablet) {
+    background-image: $linear-gradient, url(../img/hero-bg-768@1x.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+      background-image: $linear-gradient, url(../img/hero-bg-768@2x.jpg);
+    }
+  }
+
+  @media screen and(min-width: $desktop) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: $linear-gradient, url(../img/hero-bg-1600@1x.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+      background-image: $linear-gradient, url(../img/hero-bg-1600@2x.jpg);
+    }
+  }
+}
+
+// hero-title
+.hero-title {
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: getColor("third");
+
+  @media screen and(min-width: $desktop) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+// button-order-servise
+.button-order-service {
+  @extend %button;
+  padding-left: 32px;
+  padding-right: 32px;
+
+  @include transitions(background-color, color);
+
+  &:hover,
+  &:focus {
+    background-color: getColor("third");
+    color: getColor("secondary");
+  }
+}
+
+// button-order-service-wrapper
+.button-order-service-wrapper {
+  display: flex;
+  justify-content: center;
+}

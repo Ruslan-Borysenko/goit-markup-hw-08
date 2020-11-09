@@ -16,7 +16,7 @@
 }
 
 // footer-section
-.footer-section {
+.item {
   @media screen and(max-width: 1199px) {
     text-align: center;
   }
@@ -44,6 +44,11 @@
       width: calc(50% - 15px);
     }
   }
+}
+
+// footer-section__title
+h2.contacts {
+  @extend %visually-hidden;
 }
 
 // footer__logo

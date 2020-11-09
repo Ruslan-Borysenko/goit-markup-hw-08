@@ -414,7 +414,7 @@
                       srcset="./img/examples-8-354img@1x.jpg 1x, ./img/examples-8-354img@2x.jpg 2x"
                       media="(min-width: 768px) and (max-width: 1199px)"
                     />
-                    <source srcset="./img/examples-8-370img@1x.jpg 370w, ./img/examples-8-370img@2x.jpg 740w" media="(min-width: 1200px)" />
+                    <source srcset="./img/examples-8-370img@1x.jpg 1x, ./img/examples-8-370img@2x.jpg 2x" media="(min-width: 1200px)" />
 
                     <img loading="lazy" class="image" src="./img/examples-8-354img@1x.jpg" width="450" alt="Белая этикетка" />
                   </picture>
@@ -481,11 +481,12 @@
     <!-- Footer -->
     <footer class="footer" id="footer">
       <div class="container footer-flex-wrapper">
-        <section class="footer-section">
+        <section class="item">
+          <h2 class="contacts">Контакты</h2>
           <a class="logo footer__logo" href="./index.html">Web<span class="logo__item-secondary">Studio</span></a>
 
           <address class="contacts">
-            <a class="contacts__link contacts__link--text" href="https://goo.gl/maps/5TERfCZM7dk4rjz7A" rel="noopener noreferrer"
+            <a class="contacts__link contacts__link--text" href="https://goo.gl/maps/5TERfCZM7dk4rjz7A" target="_blank" rel="noopener noreferrer"
               >г. Киев, пр-т Леси Украинки, 26</a
             >
             <br />
@@ -495,8 +496,8 @@
           </address>
         </section>
 
-        <section class="footer-section">
-          <b class="call-text">Присоединяйтесь</b>
+        <section class="item">
+          <h2 class="call-text">Присоединяйтесь</h2>
           <ul class="social-networks-list">
             <li class="social-networks-list__item">
               <a class="social-networks-list__link" href="">
@@ -529,8 +530,8 @@
           </ul>
         </section>
 
-        <section class="footer-section">
-          <b class="subscribe-form__text">Подпишитесь на рассылку</b>
+        <section class="item">
+          <h2 class="subscribe-form__text">Подпишитесь на рассылку</h2>
           <form class="subscribe-form">
             <div class="subscribe-form__actions">
               <input class="subscribe-form__input" type="email" name="email" placeholder="E-mail" />
