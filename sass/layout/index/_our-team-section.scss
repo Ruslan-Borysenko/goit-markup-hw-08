@@ -1,3 +1,13 @@
+.our-team {
+  background-color: getColor("our-team-section");
+
+  @media screen and(max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+// team-cards-list
 .team-cards-list {
   @extend %list;
   text-align: center;

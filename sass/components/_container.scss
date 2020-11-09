@@ -1,0 +1,23 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: getColor("container-outline");
+  background-color: getColor("container-bck");
+
+  /* Цей медіа запит видаляє горизонтальну полосу прокрутки,
+та дає змогу контейнеру тянутись до 480px */
+  @media screen and(min-width: $mobile) {
+    width: $mobile;
+  }
+
+  @media screen and(min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and(min-width: $desktop) {
+    width: $desktop;
+  }
+}

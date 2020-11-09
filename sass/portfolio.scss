@@ -5,10 +5,10 @@
 @import "./utils/placeholders";
 @import "./utils/variables";
 @import "./utils/mixins";
-@import "./components/common/section";
-@import "./components/common/container";
-@import "./components/common/header-page";
-@import "./components/common/logo";
-@import "./components/common/social-networks-list";
-@import "./components/portfolio/portfolio-section";
-@import "./components/common/footer";
+@import "./components/section";
+@import "./components/container";
+@import "./components/header-page";
+@import "./components/logo";
+@import "./components/social-networks-list";
+@import "./layout/portfolio/portfolio-section";
+@import "./components/footer";
