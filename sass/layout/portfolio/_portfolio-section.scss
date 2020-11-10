@@ -124,6 +124,9 @@
 }
 
 .portfolio-list__pop-up-content-box {
+  @media screen and(max-width: 1199px) {
+    display: none;
+  }
   position: absolute;
   bottom: -1px;
   padding: 49px 24px;
