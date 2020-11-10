@@ -73,6 +73,11 @@
 .portfolio-list__item {
   margin-bottom: 30px;
 
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
   &:nth-last-child(-n + 1) {
     @media screen and(max-width: 1199px) {
       margin-bottom: 0px;
@@ -148,10 +153,6 @@
   border: 1px solid #eeeeee;
   border-top: none;
   box-sizing: border-box;
-
-  .portfolio-list__link:hover & {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
 }
 
 .portfolio-list__pop-up-text {
