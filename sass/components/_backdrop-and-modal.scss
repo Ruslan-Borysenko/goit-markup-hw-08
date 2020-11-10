@@ -27,6 +27,14 @@
     transform: scale(0);
   }
 
+  // модалка на всю ширину екрану на тел
+  @media screen and (max-width: 767px) {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   @media screen and (min-width: $desktop) {
     display: flex;
     justify-content: center;
