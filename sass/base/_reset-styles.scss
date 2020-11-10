@@ -1,3 +1,6 @@
+* {
+  outline-color: getColor("accent");
+}
 body.modal-open {
   overflow: hidden;
 }

@@ -7,6 +7,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+* {
+  outline-color: #2196f3;
+}
+
 body.modal-open {
   overflow: hidden;
 }
