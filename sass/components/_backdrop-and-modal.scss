@@ -28,14 +28,14 @@
   }
 
   // модалка на всю ширину екрану на тел
-  @media screen and (max-width: 767px) {
+  @include media-size(tablet-1) {
     padding-top: 0;
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include media-size(min-desktop) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +54,7 @@
   transform: scale(1);
   @include transition(transform);
 
-  @media screen and (min-width: $desktop) {
+  @include media-size(min-desktop) {
     position: absolute;
     max-width: 528px;
   }

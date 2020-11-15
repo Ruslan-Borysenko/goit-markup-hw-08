@@ -7,7 +7,7 @@
 
 // Головна обгортка
 .footer-flex-wrapper {
-  @media screen and(min-width: $tablet) {
+  @include media-size(min-tablet) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -17,30 +17,30 @@
 
 // footer-section
 .item {
-  @media screen and(max-width: 1199px) {
+  @include media-size(desktop-1) {
     text-align: center;
   }
 
-  @media screen and(min-width: $tablet) {
+  @include media-size(min-tablet) {
     width: 50%;
   }
 
-  @media screen and(min-width: $desktop) {
+  @include media-size(min-desktop) {
     width: calc((50% - 45px) / 2);
   }
 
   &:not(:last-child) {
-    @media screen and (max-width: 1199px) {
+    @include media-size(desktop-1) {
       margin-bottom: 60px;
     }
   }
 
   &:last-child {
-    @media screen and(min-width: $tablet) {
+    @include media-size(min-tablet) {
       width: 100%;
     }
 
-    @media screen and(min-width: $desktop) {
+    @include media-size(min-desktop) {
       width: calc(50% - 15px);
     }
   }
@@ -51,7 +51,7 @@
   display: block;
   margin-bottom: 20px;
 
-  @media screen and(max-width: 1199px) {
+  @include media-size(desktop-1) {
     text-align: center;
   }
 }
@@ -60,7 +60,7 @@
 .contacts {
   display: block;
 
-  @media screen and(max-width: 1199px) {
+  @include media-size(desktop-1) {
     text-align: center;
   }
 }
@@ -105,13 +105,13 @@
   color: getColor("third");
   text-align: center;
 
-  @media screen and(min-width: $desktop) {
+  @include media-size(min-desktop) {
     text-align: left;
   }
 }
 
 .subscribe-form {
-  @media screen and(min-width: $desktop) {
+  @include media-size(min-desktop) {
     display: inline-block;
   }
 }
@@ -121,7 +121,7 @@
   flex-direction: column;
   align-items: center;
 
-  @media screen and(min-width: $desktop) {
+  @include media-size(min-desktop) {
     flex-direction: row;
     align-items: baseline;
   }
@@ -143,7 +143,7 @@
   background-color: inherit;
   color: getColor("third");
 
-  @media screen and(min-width: $desktop) {
+  @include media-size(min-desktop) {
     margin-bottom: 0px;
     width: 358px;
   }
@@ -158,7 +158,7 @@
 
   @include transitions(background-color, color);
 
-  @media screen and(min-width: $desktop) {
+  @include media-size(min-desktop) {
     margin-left: 12px;
   }
 
@@ -182,7 +182,7 @@
 }
 
 .call-text-and-social-network {
-  @media screen and (min-width: $tablet) {
+  @include media-size(min-tablet) {
     display: inline-block;
     margin-left: 70px;
   }
@@ -190,7 +190,7 @@
 
 // call-text-and-social-network
 .call-text-and-social-network {
-  @media screen and(max-width: 767px) {
+  @include media-size(tablet-1) {
     margin-bottom: 60px;
   }
 }

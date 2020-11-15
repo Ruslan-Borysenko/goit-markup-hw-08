@@ -9,15 +9,15 @@
 
   /* Цей медіа запит видаляє горизонтальну полосу прокрутки,
 та дає змогу контейнеру тянутись до 480px */
-  @media screen and(min-width: $mobile) {
+  @include media-size(min-mobile) {
     width: $mobile;
   }
 
-  @media screen and(min-width: $tablet) {
+  @include media-size(min-tablet) {
     width: $tablet;
   }
 
-  @media screen and(min-width: $desktop) {
+  @include media-size(min-desktop) {
     width: $desktop;
   }
 }

@@ -7,7 +7,7 @@
   letter-spacing: 0.03em;
   color: getColor("accent");
 
-  @media screen and(min-width: $desktop) {
+  @include media-size(min-desktop) {
     font-size: 26px;
     line-height: 1.19;
   }
