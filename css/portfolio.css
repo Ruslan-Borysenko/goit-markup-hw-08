@@ -473,30 +473,23 @@ img {
 }
 
 .nav-portfolio {
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 40px;
+  margin-top: -15px;
+  margin-left: -8px;
 }
 
 @media screen and (min-width: 768px) {
   .nav-portfolio {
-    display: flex;
     justify-content: center;
   }
 }
 
 .nav-portfolio__item {
   display: inline-block;
-}
-
-@media screen and (max-width: 767px) {
-  .nav-portfolio__item:not(:nth-last-child(-n + 2)) {
-    margin-bottom: 15px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .nav-portfolio__item:not(:nth-child(1)) {
-    margin-left: 8px;
-  }
+  margin-top: 15px;
+  margin-left: 8px;
 }
 
 .nav-portfolio__button {
