@@ -521,7 +521,7 @@
             <label class="modal-form__form-field-input">
               <span class="modal-form__label">Имя</span>
               <span class="modal-form__input-wrapper">
-                <input class="modal-form__input" type="text" name="name" />
+                <input class="modal-form__input" type="text" name="name" pattern="^[a-zA-ZА-Яа-яЁё\s]+$" required />
                 <svg class="modal-form__icon" width="18" height="18">
                   <use href="./img/sprite.svg#person-black"></use>
                 </svg>
@@ -531,7 +531,7 @@
             <label class="modal-form__form-field-input">
               <span class="modal-form__label">Телефон</span>
               <span class="modal-form__input-wrapper">
-                <input class="modal-form__input" type="tel" name="telephone" />
+                <input class="modal-form__input" type="tel" name="telephone" pattern="^380[0-9]{9}(\s*)?$" required />
                 <svg class="modal-form__icon" width="18" height="18">
                   <use href="./img/sprite.svg#phone-black"></use>
                 </svg>
@@ -541,7 +541,7 @@
             <label class="modal-form__form-field-input">
               <span class="modal-form__label">Почта</span>
               <span class="modal-form__input-wrapper">
-                <input class="modal-form__input" type="email" name="email" />
+                <input class="modal-form__input" type="email" name="email" pattern="^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$" />
                 <svg class="modal-form__icon" width="18" height="18">
                   <use href="./img/sprite.svg#email-black"></use>
                 </svg>
@@ -556,7 +556,7 @@
 
           <label class="modal-form__form-field-policy">
             <input class="modal-form__check visually-hidden" type="checkbox" name="policy" />
-            <span class="modal-form__checkbox"></span>
+            <span class="modal-form__checkbox" tabindex="0"></span>
             <span class="modal-form__label-policy"
               >Соглашаюсь с рассылкой и принимаю <a class="modal-form__link-policy" href="">Условия договора</a></span
             >
@@ -570,5 +570,6 @@
     </div>
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/checkbox.js"></script>
   </body>
 </html>
