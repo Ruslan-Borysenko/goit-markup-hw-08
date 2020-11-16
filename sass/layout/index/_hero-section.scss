@@ -9,7 +9,7 @@
   display: inline-block;
   text-align: center;
 
-  @media screen and(min-width: $desktop) {
+  @include media-size(min-desktop) {
     max-width: 696px;
   }
 }
@@ -30,7 +30,7 @@
     background-image: $linear-gradient, url(../img/hero-bg-480@2x.jpg);
   }
 
-  @media screen and(min-width: $tablet) {
+  @include media-size(min-tablet) {
     background-image: $linear-gradient, url(../img/hero-bg-768@1x.jpg);
 
     @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -38,7 +38,7 @@
     }
   }
 
-  @media screen and(min-width: $desktop) {
+  @include media-size(min-desktop) {
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: $linear-gradient, url(../img/hero-bg-1600@1x.jpg);
@@ -60,7 +60,7 @@
   text-transform: uppercase;
   color: getColor("third");
 
-  @media screen and(min-width: $desktop) {
+  @include media-size(min-desktop) {
     font-size: 44px;
     line-height: 1.36;
   }

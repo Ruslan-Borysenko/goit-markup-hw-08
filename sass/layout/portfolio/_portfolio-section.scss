@@ -2,7 +2,7 @@
 .portfolio {
   background-color: getColor("portfolio-section");
 
-  @media screen and(max-width: 1199px) {
+  @include media-size(desktop-1) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -15,7 +15,7 @@
   @extend %list;
   margin-bottom: 40px;
 
-  @media screen and (min-width: $tablet) {
+  @include media-size(min-tablet) {
     display: flex;
     justify-content: center;
   }
@@ -26,13 +26,13 @@
   display: inline-block;
 
   &:not(:nth-last-child(-n + 2)) {
-    @media screen and(max-width: 767px) {
+    @include media-size(tablet-1) {
       margin-bottom: 15px;
     }
   }
 
   &:not(:nth-child(1)) {
-    @media screen and(min-width: $tablet) {
+    @include media-size(min-tablet) {
       margin-left: 8px;
     }
   }
@@ -74,34 +74,34 @@
   margin-bottom: 30px;
 
   &:nth-last-child(-n + 1) {
-    @media screen and(max-width: 1199px) {
+    @include media-size(desktop-1) {
       margin-bottom: 0px;
     }
   }
 
-  @media screen and(min-width: $tablet) {
+  @include media-size(min-tablet) {
     margin-right: 30px;
   }
 
   &:nth-last-child(-n + 3) {
-    @media screen and(min-width: $desktop) {
+    @include media-size(min-desktop) {
       margin-bottom: 0px;
     }
   }
 
   // Розраховуємо ширину контейнера для планшета
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @include media-size(min-tablet-desktop-1) {
     @include itemWidth(2);
   }
 
   &:nth-child(2n) {
-    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    @include media-size(min-tablet-desktop-1) {
       margin-right: 0px;
     }
   }
 
   // Розраховуємо ширину контейнера для ПК
-  @media screen and (min-width: $desktop) {
+  @include media-size(min-desktop) {
     @include itemWidth(3);
 
     &:nth-child(3n) {
@@ -129,7 +129,7 @@
 }
 
 .portfolio-list__pop-up-content-box {
-  @media screen and(max-width: 1199px) {
+  @include media-size(desktop-1) {
     display: none;
   }
   position: absolute;
@@ -172,7 +172,7 @@
   color: getColor("secondary");
 
   & {
-    @media screen and(min-width: $tablet) {
+    @include media-size(min-tablet) {
       font-size: 17px;
     }
   }

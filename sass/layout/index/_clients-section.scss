@@ -1,7 +1,6 @@
 .clients {
   background-color: getColor("clients-section");
-
-  @media screen and(max-width: 1199px) {
+  @include media-size(desktop-1) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -12,11 +11,11 @@
   @extend %list;
   display: flex;
 
-  @media screen and(max-width: 1199px) {
+  @include media-size(desktop-1) {
     flex-wrap: wrap;
   }
 
-  @media screen and(min-width: $tablet) {
+  @include media-size(min-tablet) {
     &:nth-child(2n) {
       margin-right: 0;
     }
@@ -29,7 +28,7 @@
   margin-bottom: 30px;
   box-sizing: border-box;
 
-  @media screen and(max-width: 767px) {
+  @include media-size(tablet-1) {
     &:nth-child(2n) {
       margin-right: 0;
     }
@@ -39,7 +38,7 @@
     }
   }
 
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @include media-size(min-tablet-desktop-1) {
     @include itemWidth(3);
 
     &:nth-child(3n) {
@@ -51,7 +50,7 @@
     }
   }
 
-  @media screen and (min-width: $desktop) {
+  @include media-size(min-desktop) {
     @include itemWidth(6);
     margin-bottom: 0px;
 

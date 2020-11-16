@@ -2,7 +2,7 @@
 .features {
   background-color: getColor("features-section");
 
-  @media screen and(max-width: 1199px) {
+  @include media-size(desktop-1) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -19,20 +19,20 @@
   margin-bottom: 30px;
 
   &:last-child {
-    @media screen and(max-width: 767px) {
+    @include media-size(tablet-1) {
       margin-bottom: 0px;
     }
   }
 
   & {
-    @media screen and(min-width: $tablet) {
+    @include media-size(min-tablet) {
       margin-right: 30px;
       @include itemWidth(2);
     }
   }
 
   & {
-    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    @include media-size(min-tablet-desktop-1) {
       &:nth-child(2n) {
         margin-right: 0px;
       }
@@ -44,7 +44,7 @@
   }
 
   & {
-    @media screen and(min-width: $desktop) {
+    @include media-size(min-desktop) {
       @include itemWidth(4);
 
       &:nth-last-child(-n + 1) {
@@ -76,7 +76,7 @@
 
   color: getColor("secondary");
 
-  @media screen and(max-width: 767px) {
+  @include media-size(tablet-1) {
     text-align: center;
   }
 }
