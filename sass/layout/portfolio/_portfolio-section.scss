@@ -106,15 +106,16 @@
       margin-right: 0px;
     }
   }
+}
+
+.portfolio-list__link {
+  display: block;
+  @extend %link;
 
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
-}
-
-.portfolio-list__link {
-  @extend %link;
 
   &:focus {
     outline: getColor("accent") auto 1px;
